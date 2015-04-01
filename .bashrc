@@ -8,7 +8,8 @@ export EDITOR=vim
 export CLICOLOR=1
 export LSCOLORS=DxGxcxdxCxegedabagacad
 export TERM=xterm-256color #256 color support
-PS1="\n\[\033[32m\][\w]\[\033[0m\]\n\[\033[1;36m\]\u\[\033[1;33m\]\$ \[\033[0m\]"
+export LESSOPEN='|/usr/local/bin/lesspipe.sh %s'
+PS1="\n╭\[\033[32m\][\w]\[\033[0m\]\n╰\[\033[1;36m\]\u\[\033[1;33m\]\$ \[\033[0m\]"
 
 export XLISPPATH=/nyquist/lib:/nyquist/runtime
 

@@ -1,14 +1,18 @@
 general {
         colors = true
         interval = 5
+	output_format = "i3bar"
 }
 
+order += "mpd_status"
 order += "disk /"
 order += "disk /home"
+order += "disk /home/amgutier/big"
 order += "wireless wlan0"
 order += "ethernet eth0"
 order += "battery 0"
 order += "load"
+order += "weather_yahoo"
 order += "time"
 
 wireless wlan0 {
@@ -27,14 +31,6 @@ battery 0 {
         format = "%status %percentage %remaining"
 }
 
-run_watch DHCP {
-        pidfile = "/var/run/dhclient*.pid"
-}
-
-run_watch VPN {
-        pidfile = "/var/run/vpnc/pid"
-}
-
 time {
         format = "%m/%d/%Y %H:%M:%S"
 }
@@ -44,9 +40,24 @@ load {
 }
 
 disk "/" {
-        format = "/: %free/%total"
+	format = "%free/%total"
 }
 
 disk "/home" {
-	format = "/home: %free/%total"
+	format = " /home %free/%total"
+}
+
+disk "/home/amgutier/big" {
+	format = " ~/big %free/%total"
+}
+
+mpd_status {
+	cache_timeout = 0
+	host = "localhost"
+	port = 6600
+	format = "{state} {artist}: {title}"
+}
+
+weather_yahoo {
+	city_code = 'USPA1928'
 }
