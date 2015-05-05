@@ -1,0 +1,571 @@
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+Accept	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^int Accept(int s, struct sockaddr *addr, socklen_t *addrlen) $/;"	f	language:C++
+accept_encoding_hdr	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/proxy.c	/^static char *accept_encoding_hdr = "Accept-Encoding: gzip, deflate\\r\\n";$/;"	v	language:C++	file:
+accept_hdr	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/proxy.c	/^static char *accept_hdr =$/;"	v	language:C++	file:
+addjob	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^addjob(struct job_t *job_list, pid_t pid, int state, char *cmdline) $/;"	f	language:C++
+addjob	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^int addjob(struct job_t *job_list, pid_t pid, int state, char *cmdline);$/;"	p	language:C++	file:
+afsperms	/home/amgutier/.bashrc_gpi	/^afsperms(){ find $1 -type d -exec fs sa {} $2 $3 \\; ; }$/;"	f	language:Sh
+Alarm	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^unsigned int Alarm(unsigned int seconds) {$/;"	f	language:C++
+ALIGN	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm-new.c	63;"	d	language:C++	file:
+ALIGN	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm.c	69;"	d	language:C++	file:
+already_liked	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^function already_liked($dbh, $me, $pID) {$/;"	f	language:PHP
+app_error	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^void app_error(char *msg) \/* Application error *\/$/;"	f	language:C++
+app_error	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^app_error(char *msg)$/;"	f	language:C++
+app_error	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^void app_error(char *msg);$/;"	p	language:C++	file:
+argc	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^    int argc;               \/* Number of arguments *\/$/;"	m	language:C++	struct:cmdline_tokens	file:
+argv	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^    char *argv[MAXARGS];    \/* The arguments list *\/$/;"	m	language:C++	struct:cmdline_tokens	file:
+array_to_i32	/home/amgutier/www/cdb/public/vm/c0vm.js	/^function array_to_i32(array) {$/;"	f	language:JavaScript
+b:current_syntax	/home/amgutier/.vim/syntax/sal.vim	/^let b:current_syntax = "sal"$/;"	v	language:Vim
+Bc0File	/home/amgutier/www/cdb/public/vm/bytecode-parser.js	/^var Bc0File = function (filename) {$/;"	c	language:JavaScript
+BG	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	28;"	d	language:C++	file:
+bg_builtin	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^void bg_builtin(struct cmdline_tokens tok) {$/;"	f	language:C++
+Bind	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^void Bind(int sockfd, struct sockaddr *my_addr, int addrlen) $/;"	f	language:C++
+blankline	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/runtrace.c	/^int blankline(char *str)$/;"	f	language:C++
+blankline	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/runtrace.c	/^int blankline(char *str);$/;"	p	language:C++	file:
+buf	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/runtrace.c	/^char buf[MAXBUF];$/;"	v	language:C++
+builtins	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^        BUILTIN_FG} builtins;$/;"	m	language:C++	struct:cmdline_tokens	typeref:enum:cmdline_tokens::builtins_t	file:
+builtins_t	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^    enum builtins_t {       \/* Indicates if argv[0] is a builtin command *\/$/;"	g	language:C++	struct:cmdline_tokens	file:
+BUILTIN_BG	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^        BUILTIN_BG,$/;"	e	language:C++	enum:cmdline_tokens::builtins_t	file:
+BUILTIN_FG	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^        BUILTIN_FG} builtins;$/;"	e	language:C++	enum:cmdline_tokens::builtins_t	file:
+BUILTIN_JOBS	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^        BUILTIN_JOBS,$/;"	e	language:C++	enum:cmdline_tokens::builtins_t	file:
+BUILTIN_NONE	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^        BUILTIN_NONE,$/;"	e	language:C++	enum:cmdline_tokens::builtins_t	file:
+BUILTIN_QUIT	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^        BUILTIN_QUIT,$/;"	e	language:C++	enum:cmdline_tokens::builtins_t	file:
+bytecode	/afs/andrew.cmu.edu/usr14/amgutier/www/cc0.cgi	/^    bytecode = open('\/tmp\/a.bc0', 'r')$/;"	v	language:Python
+c0_assertion_failure	/home/amgutier/www/cdb/public/vm/c0vm.js	/^function c0_assertion_failure(val) {$/;"	f	language:JavaScript
+c0_memory_error	/home/amgutier/www/cdb/public/vm/c0vm.js	/^function c0_memory_error(val) {$/;"	f	language:JavaScript
+cache	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/cache.h	/^typedef struct cache_info *cache;$/;"	t	language:C++	typeref:struct:cache_info
+cache_info	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/cache.h	/^struct cache_info {$/;"	s	language:C++
+cache_timeout	/home/amgutier/weather_yahoo.py	/^    cache_timeout = 1800$/;"	v	language:Python	class:Py3status
+cache_timeout	/usr/local/lib/python2.7/dist-packages/py3status/modules/mpdstatus.py	/^    cache_timeout = 0$/;"	v	language:Python	class:Py3status
+cache_timeout	/usr/local/lib/python2.7/dist-packages/py3status/modules/weather_yahoo.py	/^    cache_timeout = 1800$/;"	v	language:Python	class:Py3status
+callbacks	/home/amgutier/www/cdb/public/vm/c0ffi.js	/^callbacks = {};$/;"	f	language:JavaScript
+callbacks	/home/amgutier/www/cdb/public/vm/index.js	/^callbacks = c0ffi.default_callbacks;$/;"	f	language:JavaScript
+Calloc	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^void *Calloc(size_t nmemb, size_t size) $/;"	f	language:C++
+CC	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/Makefile	/^CC = gcc$/;"	m	language:Make
+CC	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/Makefile	/^CC = gcc$/;"	m	language:Make
+CC	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/tiny/Makefile	/^CC = gcc$/;"	m	language:Make
+CC	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/Makefile	/^CC = gcc$/;"	m	language:Make
+CFLAGS	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/Makefile	/^CFLAGS = -Wall -Wextra -Werror -O3 -DDRIVER -std=gnu99 $/;"	m	language:Make
+CFLAGS	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/Makefile	/^CFLAGS = -g -O2 -Wall -Werror -std=gnu99$/;"	m	language:Make
+CFLAGS	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/tiny/Makefile	/^CFLAGS = -O2 -Wall -g -I .$/;"	m	language:Make
+CFLAGS	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/Makefile	/^CFLAGS = -Wall -g -Werror$/;"	m	language:Make
+checkblock	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm-new.c	/^static void checkblock(void *bp)$/;"	f	language:C++	file:
+checkblock	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm-new.c	/^static void checkblock(void *bp);$/;"	p	language:C++	file:
+checkblock	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm.c	/^static void checkblock(void *bp)$/;"	f	language:C++	file:
+checkblock	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm.c	/^static void checkblock(void *bp);$/;"	p	language:C++	file:
+checkheap	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm-new.c	/^static void checkheap(int verbose);$/;"	p	language:C++	file:
+checkheap	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm-new.c	/^void checkheap(int verbose)$/;"	f	language:C++
+checkheap	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm.c	/^static void checkheap(int verbose);$/;"	p	language:C++	file:
+checkheap	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm.c	/^void checkheap(int verbose)$/;"	f	language:C++
+check_word	/home/amgutier/Dropbox/s15/15415/hw3/btree/SRC/get_predecessors.c	/^extern int check_word(char *word);$/;"	p	language:C++	file:
+CHUNKSIZE	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm-new.c	38;"	d	language:C++	file:
+CHUNKSIZE	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm.c	44;"	d	language:C++	file:
+city_code	/home/amgutier/weather_yahoo.py	/^    city_code = 'FRXX0076'$/;"	v	language:Python	class:Py3status
+city_code	/usr/local/lib/python2.7/dist-packages/py3status/modules/weather_yahoo.py	/^    city_code = 'FRXX0076'$/;"	v	language:Python	class:Py3status
+clean	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/runtrace.c	/^void clean() {$/;"	f	language:C++
+clean	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/runtrace.c	/^void clean(void);$/;"	p	language:C++	file:
+clearjob	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^clearjob(struct job_t *job) {$/;"	f	language:C++
+clearjob	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^void clearjob(struct job_t *job);$/;"	p	language:C++	file:
+clienterror	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/proxy.c	/^void clienterror(int fd, char *cause, char *errnum, char *shortmsg,$/;"	f	language:C++
+clienterror	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/proxy.c	/^void clienterror(int fd, char *cause, char *errnum, char *shortmsg,$/;"	p	language:C++	file:
+clienterror	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/tiny/tiny.c	/^void clienterror(int fd, char *cause, char *errnum, $/;"	f	language:C++
+clienterror	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/tiny/tiny.c	/^void clienterror(int fd, char *cause, char *errnum, $/;"	p	language:C++	file:
+Close	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^void Close(int fd) $/;"	f	language:C++
+Closedir	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^int Closedir(DIR *dirp) $/;"	f	language:C++
+close_db_connection	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^function close_db_connection($dbh) {$/;"	f	language:PHP
+cmdline	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^    char cmdline[MAXLINE];  \/* command line *\/$/;"	m	language:C++	struct:job_t	file:
+cmdline_tokens	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^struct cmdline_tokens {$/;"	s	language:C++	file:
+cmp_string	/home/amgutier/Dropbox/s15/15415/hw3/btree/SRC/get_predecessors.c	/^int cmp_string(const void *a, const void *b) { $/;"	f	language:C++
+coalesce	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm-new.c	/^static void *coalesce(void *bp)$/;"	f	language:C++	file:
+coalesce	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm-new.c	/^static void *coalesce(void *bp);$/;"	p	language:C++	file:
+coalesce	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm.c	/^static void *coalesce(void *bp)$/;"	f	language:C++	file:
+coalesce	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm.c	/^static void *coalesce(void *bp);$/;"	p	language:C++	file:
+command	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/runtrace.c	/^char command[MAXBUF];$/;"	v	language:C++
+Connect	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^void Connect(int sockfd, struct sockaddr *serv_addr, int addrlen) $/;"	f	language:C++
+count	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^			$count = $row["likes"];$/;"	v	language:PHP
+count	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^			$count = $row["posts"];$/;"	v	language:PHP
+count	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^			$count = 0;$/;"	v	language:PHP
+count	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^			$count = 0;$/;"	v	language:PHP
+count	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^		$count = $row["likes"];$/;"	v	language:PHP
+count	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^		$count = 0;$/;"	v	language:PHP
+data	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/cache.h	/^  char data[MAX_OBJECT_SIZE];$/;"	m	language:C++	struct:cache_info
+data	/afs/andrew.cmu.edu/usr14/amgutier/www/cc0.cgi	/^    data  = stderr.read()$/;"	v	language:Python
+data	/afs/andrew.cmu.edu/usr14/amgutier/www/cc0.cgi	/^    data = bytecode.read()$/;"	v	language:Python
+Data	/usr/local/lib/python2.7/dist-packages/py3status/modules/mpdstatus.py	/^class Data:$/;"	c	language:Python
+datafd	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/runtrace.c	/^int datafd[2];$/;"	v	language:C++
+dbh	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^	$dbh = pg_connect("host=$host port=$port dbname=$db user=$user password=$pw")$/;"	v	language:PHP
+db_connect	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^function db_connect($host, $port, $db, $user, $pw) {$/;"	f	language:PHP
+DB_PW	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/config.php	/^$DB_PW = "hey415"; # DATABASE PASSWORD$/;"	v	language:PHP
+DB_USER	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/config.php	/^$DB_USER = "amgutier"; # DATABASE USERNAME$/;"	v	language:PHP
+deletejob	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^deletejob(struct job_t *job_list, pid_t pid) $/;"	f	language:C++
+deletejob	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^int deletejob(struct job_t *job_list, pid_t pid); $/;"	p	language:C++	file:
+delete_post	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^function delete_post($dbh, $user, $pID) {$/;"	f	language:PHP
+disconnect	/usr/local/lib/python2.7/dist-packages/py3status/modules/mpdstatus.py	/^    def disconnect(self):$/;"	m	language:Python	class:Data
+dns_error	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^void dns_error(char *msg) \/* Obsolete gethostbyname error *\/$/;"	f	language:C++
+doIf	/home/amgutier/www/cdb/public/vm/c0vm.js	/^ProgramState.prototype.doIf = function(f) {$/;"	m	language:JavaScript	class:ProgramState
+doit	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/proxy.c	/^void doit(int fd) {$/;"	f	language:C++
+doit	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/proxy.c	/^void doit(int fd);$/;"	p	language:C++	file:
+doit	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/tiny/tiny.c	/^void doit(int fd) $/;"	f	language:C++
+doit	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/tiny/tiny.c	/^void doit(int fd);$/;"	p	language:C++	file:
+DSIZE	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm-new.c	37;"	d	language:C++	file:
+DSIZE	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm.c	43;"	d	language:C++	file:
+DUMMY	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm-new.c	69;"	d	language:C++	file:
+Dup2	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^int Dup2(int fd1, int fd2) $/;"	f	language:C++
+elem_free	/afs/andrew.cmu.edu/usr14/amgutier/private/f13/15122/hw9/c0vm.c	/^void elem_free(void *e) {$/;"	f	language:C++
+eval	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^eval(char *cmdline) $/;"	f	language:C++
+eval	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^void eval(char *cmdline);$/;"	p	language:C++	file:
+execute	/afs/andrew.cmu.edu/usr14/amgutier/private/f13/15122/hw9/c0vm.c	/^int execute(struct bc0_file *bc0) {$/;"	f	language:C++
+execute	/home/amgutier/www/cdb/public/vm/c0vm.js	/^function execute(file, callbacks, v) {$/;"	f	language:JavaScript
+Execve	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^void Execve(const char *filename, char *const argv[], char *const envp[]) $/;"	f	language:C++
+extend_heap	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm-new.c	/^static void *extend_heap(size_t words)$/;"	f	language:C++	file:
+extend_heap	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm-new.c	/^static void *extend_heap(size_t words);$/;"	p	language:C++	file:
+extend_heap	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm.c	/^static void *extend_heap(size_t words)$/;"	f	language:C++	file:
+extend_heap	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm.c	/^static void *extend_heap(size_t words);$/;"	p	language:C++	file:
+fact	/home/amgutier/foo.c	/^int fact(int x) {$/;"	f	language:C++
+fact	/home/amgutier/foo.py	/^def fact(x):$/;"	f	language:Python
+fact	/home/amgutier/foo.sml	/^fun fact 0 = 1$/;"	f	language:SML
+Fclose	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^void Fclose(FILE *fp) $/;"	f	language:C++
+Fdopen	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^FILE *Fdopen(int fd, const char *type) $/;"	f	language:C++
+FetchPage	/home/amgutier/Dropbox/s15/15415/hw3/btree/SRC/get_predecessors.c	/^extern struct PageHdr *FetchPage(PAGENO Page);$/;"	p	language:C++	file:
+FG	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	27;"	d	language:C++	file:
+Fgets	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^char *Fgets(char *ptr, int n, FILE *stream) $/;"	f	language:C++
+fgpid	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^fgpid(struct job_t *job_list) {$/;"	f	language:C++
+fgpid	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^pid_t fgpid(struct job_t *job_list);$/;"	p	language:C++	file:
+fg_builtin	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^void fg_builtin(struct cmdline_tokens tok) {$/;"	f	language:C++
+FILES	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/Makefile	/^FILES = sdriver runtrace tsh myspin1 myspin2 myenv myintp myints mytstpp mytstps mysplit mysplitp mycat$/;"	m	language:Make
+FILES	/home/amgutier/www/cdb/public/vm/Makefile	/^FILES = c0vm.js bytecode-parser.js byte-stream.js opcodes.js c0ffi.js index.js $/;"	m	language:Make
+find_fit	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm-new.c	/^static void *find_fit(size_t asize)$/;"	f	language:C++	file:
+find_fit	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm-new.c	/^static void *find_fit(size_t asize);$/;"	p	language:C++	file:
+find_fit	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm.c	/^static void *find_fit(size_t asize)$/;"	f	language:C++	file:
+find_fit	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm.c	/^static void *find_fit(size_t asize);$/;"	p	language:C++	file:
+Fopen	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^FILE *Fopen(const char *filename, const char *mode) $/;"	f	language:C++
+forecast_days	/home/amgutier/weather_yahoo.py	/^    forecast_days = 3$/;"	v	language:Python	class:Py3status
+forecast_days	/usr/local/lib/python2.7/dist-packages/py3status/modules/weather_yahoo.py	/^    forecast_days = 5$/;"	v	language:Python	class:Py3status
+Fork	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^pid_t Fork(void) $/;"	f	language:C++
+form	/afs/andrew.cmu.edu/usr14/amgutier/www/cc0.cgi	/^form = cgi.FieldStorage()$/;"	v	language:Python
+Fputs	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^void Fputs(const char *ptr, FILE *stream) $/;"	f	language:C++
+frame	/afs/andrew.cmu.edu/usr14/amgutier/private/f13/15122/hw9/c0vm.c	/^struct frame {$/;"	s	language:C++	file:
+frame	/afs/andrew.cmu.edu/usr14/amgutier/private/f13/15122/hw9/c0vm.c	/^typedef struct frame * frame;$/;"	t	language:C++	typeref:struct:frame	file:
+Fread	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^size_t Fread(void *ptr, size_t size, size_t nmemb, FILE *stream) $/;"	f	language:C++
+Free	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^void Free(void *ptr) $/;"	f	language:C++
+Freeaddrinfo	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^void Freeaddrinfo(struct addrinfo *res)$/;"	f	language:C++
+FreePage	/home/amgutier/Dropbox/s15/15415/hw3/btree/SRC/get_predecessors.c	/^extern int FreePage(struct PageHdr *PagePtr);$/;"	p	language:C++	file:
+free_listp	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm-new.c	/^static int *free_listp = 0; \/\/ pointer to the first free block$/;"	v	language:C++	file:
+free_listp	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm.c	/^static char *free_listp = 0; \/\/ pointer to the first free block$/;"	v	language:C++	file:
+free_vars	/afs/andrew.cmu.edu/usr14/amgutier/private/f13/15122/hw9/c0vm.c	/^void free_vars(stack S, c0_value *V, stack callStack) {$/;"	f	language:C++
+Fstat	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^void Fstat(int fd, struct stat *buf) $/;"	f	language:C++
+FTRP	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm-new.c	56;"	d	language:C++	file:
+FTRP	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm.c	62;"	d	language:C++	file:
+FunctionInfo	/home/amgutier/www/cdb/public/vm/bytecode-parser.js	/^var FunctionInfo = function (stream) {$/;"	c	language:JavaScript
+Fwrite	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^void Fwrite(const void *ptr, size_t size, size_t nmemb, FILE *stream) $/;"	f	language:C++
+g:airline_powerline_fonts	/home/amgutier/.vimrc	/^let g:airline_powerline_fonts=1$/;"	v	language:Vim
+gai_error	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^void gai_error(int code, char *msg) \/* Getaddrinfo-style error *\/$/;"	f	language:C++
+GET	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm-new.c	47;"	d	language:C++	file:
+GET	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm.c	53;"	d	language:C++	file:
+get	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/cache.c	/^char *get(char *resource) {$/;"	f	language:C++
+get	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/cache.h	/^char *get(char *resource);$/;"	p	language:C++
+Getaddrinfo	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^void Getaddrinfo(const char *node, const char *service, $/;"	f	language:C++
+getBytes	/home/amgutier/www/cdb/public/vm/bytecode-parser.js	/^function getBytes(data) {$/;"	f	language:JavaScript
+Gethostbyaddr	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^struct hostent *Gethostbyaddr(const char *addr, int len, int type) $/;"	f	language:C++
+Gethostbyname	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^struct hostent *Gethostbyname(const char *name) $/;"	f	language:C++
+getjobjid	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^struct job_t *getjobjid(struct job_t *job_list, int jid) $/;"	f	language:C++
+getjobjid	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^struct job_t *getjobjid(struct job_t *job_list, int jid); $/;"	p	language:C++	file:
+getjobpid	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^*getjobpid(struct job_t *job_list, pid_t pid) {$/;"	f	language:C++
+getjobpid	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^struct job_t *getjobpid(struct job_t *job_list, pid_t pid);$/;"	p	language:C++	file:
+Getnameinfo	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^void Getnameinfo(const struct sockaddr *sa, socklen_t salen, char *host, $/;"	f	language:C++
+Getpgrp	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^pid_t Getpgrp(void) {$/;"	f	language:C++
+GET_ALLOC	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm-new.c	52;"	d	language:C++	file:
+GET_ALLOC	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm.c	58;"	d	language:C++	file:
+get_cs_afs_access	/home/amgutier/.bashrc_gpi	/^get_cs_afs_access() {$/;"	f	language:Sh
+get_filetype	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/tiny/tiny.c	/^void get_filetype(char *filename, char *filetype) $/;"	f	language:C++
+get_filetype	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/tiny/tiny.c	/^void get_filetype(char *filename, char *filetype);$/;"	p	language:C++	file:
+get_most_active_users	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^function get_most_active_users($dbh, $count = 10) {$/;"	f	language:PHP
+get_most_popular_posts	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^function get_most_popular_posts($dbh, $count = 10, $from = 0) {$/;"	f	language:PHP
+get_num_likes	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^function get_num_likes($dbh, $pID) {$/;"	f	language:PHP
+get_num_likes_of_user	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^function get_num_likes_of_user($dbh, $uID) {$/;"	f	language:PHP
+get_num_posts	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^function get_num_posts($dbh, $uID) {$/;"	f	language:PHP
+get_predecessors	/home/amgutier/Dropbox/s15/15415/hw3/btree/SRC/get_predecessors.c	/^int get_predecessors(char *key, int k, char *result[]) {$/;"	f	language:C++
+get_recommended_posts	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^function get_recommended_posts($dbh, $count = 10, $user) {$/;"	f	language:PHP
+GET_SIZE	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm-new.c	51;"	d	language:C++	file:
+GET_SIZE	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm.c	57;"	d	language:C++	file:
+get_stats	/usr/local/lib/python2.7/dist-packages/py3status/modules/mpdstatus.py	/^    def get_stats(self):$/;"	m	language:Python	class:Data
+get_timeline	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^function get_timeline($dbh, $user, $count = 10, $start = PHP_INT_MAX) {$/;"	f	language:PHP
+get_user_posts	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^function get_user_posts($dbh, $user, $count = 10, $start = PHP_INT_MAX) {$/;"	f	language:PHP
+goto_offset	/home/amgutier/www/cdb/public/vm/c0vm.js	/^ProgramState.prototype.goto_offset = function() {$/;"	m	language:JavaScript	class:ProgramState
+gpi	/home/amgutier/.bashrc_gpi	/^gpi(){$/;"	f	language:Sh
+gpi_install	/home/amgutier/.bashrc_gpi	/^gpi_install() {$/;"	f	language:Sh
+gpi_makemake	/home/amgutier/.bashrc_gpi	/^gpi_makemake() {$/;"	f	language:Sh
+handler_t	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^typedef void handler_t(int);$/;"	t	language:C++	file:
+has_connection	/usr/local/lib/python2.7/dist-packages/py3status/modules/mpdstatus.py	/^    def has_connection(self):$/;"	m	language:Python	class:Data
+HDRP	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm-new.c	55;"	d	language:C++	file:
+HDRP	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm.c	61;"	d	language:C++	file:
+head	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/cache.c	/^cache head;       \/\/ start of the cache$/;"	v	language:C++
+heap_listp	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm-new.c	/^static char *heap_listp = 0;  \/* Pointer to first block *\/$/;"	v	language:C++	file:
+heap_listp	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm.c	/^static char *heap_listp = 0;  \/* Pointer to first block *\/$/;"	v	language:C++	file:
+home	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/config.php	/^$home = "http:\/\/www.contrib.andrew.cmu.edu\/~amgutier\/cmupostly\/";$/;"	v	language:PHP
+host	/usr/local/lib/python2.7/dist-packages/py3status/modules/mpdstatus.py	/^    host = 'localhost'$/;"	v	language:Python	class:Py3status
+i32_to_array	/home/amgutier/www/cdb/public/vm/c0vm.js	/^function i32_to_array(i32) {$/;"	f	language:JavaScript
+Inet_ntop	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^void Inet_ntop(int af, const void *src, char *dst, socklen_t size)$/;"	f	language:C++
+Inet_pton	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^void Inet_pton(int af, const char *src, void *dst) $/;"	f	language:C++
+infile	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^    char *infile;           \/* The input file *\/$/;"	m	language:C++	struct:cmdline_tokens	file:
+infile	/afs/andrew.cmu.edu/usr14/amgutier/www/cc0.cgi	/^infile = open('\/tmp\/a.c0', 'w')$/;"	v	language:Python
+initialize_vm	/home/amgutier/www/cdb/public/vm/c0vm.js	/^function initialize_vm(file, callbacks, v) {$/;"	f	language:JavaScript
+initjobs	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^initjobs(struct job_t *job_list) {$/;"	f	language:C++
+initjobs	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^void initjobs(struct job_t *job_list);$/;"	p	language:C++	file:
+init_routine	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/cache.c	/^void init_routine() {$/;"	f	language:C++
+insert_list	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm-new.c	/^static void insert_list(void *bp) {$/;"	f	language:C++	file:
+insert_list	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm-new.c	/^static void insert_list(void *bp);$/;"	p	language:C++	file:
+insert_list	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm.c	/^static inline void insert_list(void *bp) {$/;"	f	language:C++	file:
+insert_list	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm.c	/^static inline void insert_list(void *bp);$/;"	p	language:C++	file:
+INT_MAX	/home/amgutier/www/cdb/public/vm/c0vm.js	/^var INT_MAX = 0x7FFFFFFF;$/;"	v	language:JavaScript
+INT_MIN	/home/amgutier/www/cdb/public/vm/c0vm.js	/^var INT_MIN = 0x80000000;$/;"	v	language:JavaScript
+invalid_hostname	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/proxy.c	/^int invalid_hostname(char *hostname, char *port) {$/;"	f	language:C++
+invalid_hostname	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/proxy.c	/^int invalid_hostname(char *hostname, char *port);$/;"	p	language:C++	file:
+in_heap	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm.c	/^static int in_heap(void *p) {$/;"	f	language:C++	file:
+jid	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^    int jid;                \/* job ID [1, 2, ...] *\/$/;"	m	language:C++	struct:job_t	file:
+jobs_builtin	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^void jobs_builtin(struct cmdline_tokens tok) {$/;"	f	language:C++
+job_list	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^struct job_t job_list[MAXJOBS]; \/* The job list *\/$/;"	v	language:C++	typeref:struct:job_t
+job_t	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^struct job_t {              \/* The job struct *\/$/;"	s	language:C++	file:
+key	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^	$key = pg_escape_string($key);$/;"	v	language:PHP
+Kill	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^void Kill(pid_t pid, int signum) $/;"	f	language:C++
+kill	/usr/local/lib/python2.7/dist-packages/py3status/modules/mpdstatus.py	/^    def kill(self, json, i3status_config, event):$/;"	m	language:Python	class:Py3status
+L	/home/amgutier/foo.sml	/^val L = List.map (fn x => Int.toString x ^ "\\n") (List.tabulate(30, fact));$/;"	v	language:SML
+ldap	/home/amgutier/.bashrc_gpi	/^ldap(){ ldapsearch -b ou=person,dc=cmu,dc=edu cn=$1; }$/;"	f	language:Sh
+LDFLAGS	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/Makefile	/^LDFLAGS = -lpthread$/;"	m	language:Make
+LIB	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/tiny/Makefile	/^LIB = -lpthread$/;"	m	language:Make
+like_post	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^function like_post($dbh, $me, $pID) {$/;"	f	language:PHP
+line	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/runtrace.c	/^char line[MAXBUF];$/;"	v	language:C++
+Listen	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^void Listen(int s, int backlog) $/;"	f	language:C++
+listjobs	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^listjobs(struct job_t *job_list, int output_fd) $/;"	f	language:C++
+listjobs	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^void listjobs(struct job_t *job_list, int output_fd);$/;"	p	language:C++	file:
+log	/home/amgutier/www/cdb/public/vm/c0vm.js	/^function log(message) {$/;"	f	language:JavaScript
+login	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^function login($dbh, $user, $pw) {$/;"	f	language:PHP
+Lseek	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^off_t Lseek(int fildes, off_t offset, int whence) $/;"	f	language:C++
+main	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/ptest.c	/^int main() {$/;"	f	language:C++
+main	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/proxy.c	/^int main(int argc, char **argv) {$/;"	f	language:C++
+main	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/tiny/tiny.c	/^int main(int argc, char **argv) $/;"	f	language:C++
+main	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/runtrace.c	/^int main(int argc, char **argv) $/;"	f	language:C++
+main	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^main(int argc, char **argv) $/;"	f	language:C++
+main	/home/amgutier/foo.c	/^int main() {$/;"	f	language:C++
+main	/home/amgutier/test.c	/^int main() {$/;"	f	language:C++
+Malloc	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^void *Malloc(size_t size) $/;"	f	language:C++
+MAX	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm-new.c	41;"	d	language:C++	file:
+MAX	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm.c	47;"	d	language:C++	file:
+MAXARGS	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	21;"	d	language:C++	file:
+MAXBUF	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/runtrace.c	23;"	d	language:C++	file:
+maxjid	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^int maxjid(struct job_t *job_list); $/;"	p	language:C++	file:
+maxjid	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^maxjid(struct job_t *job_list) $/;"	f	language:C++
+MAXJID	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	23;"	d	language:C++	file:
+MAXJOBS	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	22;"	d	language:C++	file:
+MAXLINE	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	20;"	d	language:C++	file:
+MAX_CACHE_SIZE	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/cache.h	8;"	d	language:C++
+MAX_CACHE_SIZE	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/proxy.c	25;"	d	language:C++	file:
+MAX_OBJECT_SIZE	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/cache.h	9;"	d	language:C++
+MAX_OBJECT_SIZE	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/proxy.c	26;"	d	language:C++	file:
+me	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^	$me = pg_escape_string($me);$/;"	v	language:PHP
+me	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^	$me = pg_escape_string($me);$/;"	v	language:PHP
+me	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^	$me = pg_escape_string($me);$/;"	v	language:PHP
+Mmap	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^void *Mmap(void *addr, size_t len, int prot, int flags, int fd, off_t offset) $/;"	f	language:C++
+mm_checkheap	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm-new.c	/^void mm_checkheap(int verbose) {$/;"	f	language:C++
+mm_checkheap	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm.c	/^void mm_checkheap(int verbose) {$/;"	f	language:C++
+mm_free	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm-new.c	/^void mm_free(void *bp)$/;"	f	language:C++
+mm_free	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm.c	/^void mm_free(void *bp)$/;"	f	language:C++
+mm_init	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm-new.c	/^int mm_init(void)$/;"	f	language:C++
+mm_init	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm.c	/^int mm_init(void)$/;"	f	language:C++
+mm_malloc	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm-new.c	/^void *mm_malloc(size_t size)$/;"	f	language:C++
+mm_malloc	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm.c	/^void *mm_malloc(size_t size)$/;"	f	language:C++
+mm_realloc	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm-new.c	/^void *mm_realloc(void *ptr, size_t size)$/;"	f	language:C++
+mm_realloc	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm.c	/^void *mm_realloc(void *ptr, size_t size)$/;"	f	language:C++
+mpdstatus	/usr/local/lib/python2.7/dist-packages/py3status/modules/mpdstatus.py	/^    def mpdstatus(self, json, i3status_config):$/;"	m	language:Python	class:Py3status
+MPDstatusException	/usr/local/lib/python2.7/dist-packages/py3status/modules/mpdstatus.py	/^class MPDstatusException(Exception):$/;"	c	language:Python
+msg	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^	$msg = pg_escape_string($msg);$/;"	v	language:PHP
+Munmap	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^void Munmap(void *start, size_t length) $/;"	f	language:C++
+mutex	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/cache.c	/^static sem_t mutex;$/;"	v	language:C++	file:
+MY_DB	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/config.php	/^$MY_DB = "contrib_amgutier"; # DATABASE NAME$/;"	v	language:PHP
+MY_DB_PORT	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/config.php	/^$MY_DB_PORT = 5432;$/;"	v	language:PHP
+MY_HOST	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/config.php	/^$MY_HOST = "contrib-postgres.club.cc.cmu.edu";$/;"	v	language:PHP
+name	/afs/andrew.cmu.edu/usr14/amgutier/www/cc0.cgi	/^name = "test"$/;"	v	language:Python
+name	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^	$name = pg_escape_String($name);$/;"	v	language:PHP
+name	/usr/local/lib/python2.7/dist-packages/py3status/modules/mpdstatus.py	/^    name = 'MPD:'$/;"	v	language:Python	class:Py3status
+NativeInfo	/home/amgutier/www/cdb/public/vm/bytecode-parser.js	/^var NativeInfo = function (stream) {$/;"	c	language:JavaScript
+natives	/home/amgutier/www/cdb/public/vm/c0vm.js	/^            this.natives[i] = function (arg) {$/;"	m	language:JavaScript	class:this
+native_function	/home/amgutier/www/cdb/public/vm/c0vm.js	/^        if (native_function === undefined) {$/;"	f	language:JavaScript
+next	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/cache.h	/^  cache next;$/;"	m	language:C++	struct:cache_info
+next	/usr/local/lib/python2.7/dist-packages/py3status/modules/mpdstatus.py	/^    def next(self):$/;"	m	language:Python	class:Data
+nextjid	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^int nextjid = 1;            \/* next job ID to allocate *\/$/;"	v	language:C++
+NEXT_BLKP	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm-new.c	59;"	d	language:C++	file:
+NEXT_BLKP	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm.c	65;"	d	language:C++	file:
+next_prompt	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/runtrace.c	/^int next_prompt(void)$/;"	f	language:C++
+next_prompt	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/runtrace.c	/^int next_prompt(void);$/;"	p	language:C++	file:
+NFIT	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm.c	45;"	d	language:C++	file:
+num_to_i32	/home/amgutier/www/cdb/public/vm/c0vm.js	/^function num_to_i32(num) {$/;"	f	language:JavaScript
+OBJS	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/Makefile	/^OBJS = mdriver.o mm.o memlib.o fsecs.o fcyc.o clock.o ftimer.o$/;"	m	language:Make
+OFF2PTR	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm-new.c	66;"	d	language:C++	file:
+OFF2PTR	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm.c	72;"	d	language:C++	file:
+once_control	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/cache.c	/^pthread_once_t once_control = PTHREAD_ONCE_INIT;$/;"	v	language:C++
+on_click	/usr/local/lib/python2.7/dist-packages/py3status/modules/mpdstatus.py	/^    def on_click(self, json, i3status_config, event):$/;"	m	language:Python	class:Py3status
+Open	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^int Open(const char *pathname, int flags, mode_t mode) $/;"	f	language:C++
+Opendir	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^DIR *Opendir(const char *name) $/;"	f	language:C++
+Open_clientfd	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^int Open_clientfd(char *hostname, char *port) $/;"	f	language:C++
+open_clientfd	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^int open_clientfd(char *hostname, char *port) {$/;"	f	language:C++
+open_clientfd_cont	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/proxy.c	/^int open_clientfd_cont(char *hostname, char *port);$/;"	p	language:C++	file:
+open_listenfd	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^int open_listenfd(char *port) $/;"	f	language:C++
+Open_listenfd	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^int Open_listenfd(char *port) $/;"	f	language:C++
+outfile	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^    char *outfile;          \/* The output file *\/$/;"	m	language:C++	struct:cmdline_tokens	file:
+P	/afs/andrew.cmu.edu/usr14/amgutier/private/f13/15122/hw9/c0vm.c	/^  ubyte *P;    \/* function body *\/$/;"	m	language:C++	struct:frame	file:
+P	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^void P(sem_t *sem) $/;"	f	language:C++
+PACK	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm-new.c	44;"	d	language:C++	file:
+PACK	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm.c	50;"	d	language:C++	file:
+parse	/home/amgutier/www/cdb/public/vm/bytecode-parser.js	/^function parse(filename) {$/;"	f	language:JavaScript
+parseline	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^int parseline(const char *cmdline, struct cmdline_tokens *tok); $/;"	p	language:C++	file:
+parseline	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^parseline(const char *cmdline, struct cmdline_tokens *tok) $/;"	f	language:C++
+parse_uri	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/tiny/tiny.c	/^int parse_uri(char *uri, char *filename, char *cgiargs) $/;"	f	language:C++
+parse_uri	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/tiny/tiny.c	/^int parse_uri(char *uri, char *filename, char *cgiargs);$/;"	p	language:C++	file:
+password	/usr/local/lib/python2.7/dist-packages/py3status/modules/mpdstatus.py	/^    password = ''$/;"	v	language:Python	class:Py3status
+Pause	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^void Pause() $/;"	f	language:C++
+pause	/usr/local/lib/python2.7/dist-packages/py3status/modules/mpdstatus.py	/^    def pause(self):$/;"	m	language:Python	class:Data
+pc	/afs/andrew.cmu.edu/usr14/amgutier/private/f13/15122/hw9/c0vm.c	/^  size_t pc;   \/* return address *\/$/;"	m	language:C++	struct:frame	file:
+pdate	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^		$pdate = date('Y-m-d H:i:s', $start);$/;"	v	language:PHP
+pdate	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^		$pdate = date('Y-m-d H:i:s', $start);$/;"	v	language:PHP
+pdate	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^		$pdate = date('Y-m-d H:i:s', $start);$/;"	v	language:PHP
+pid	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^    pid_t pid;              \/* job PID *\/$/;"	m	language:C++	struct:job_t	file:
+pid2jid	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^int pid2jid(pid_t pid); $/;"	p	language:C++	file:
+pid2jid	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^pid2jid(pid_t pid) $/;"	f	language:C++
+place	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm-new.c	/^static void place(void *bp, size_t asize)$/;"	f	language:C++	file:
+place	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm-new.c	/^static void place(void *bp, size_t asize);$/;"	p	language:C++	file:
+place	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm.c	/^static inline void place(void *bp, size_t asize)$/;"	f	language:C++	file:
+place	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm.c	/^static inline void place(void *bp, size_t asize);$/;"	p	language:C++	file:
+pop	/home/amgutier/www/cdb/public/vm/c0vm.js	/^ProgramState.prototype.pop = function() {$/;"	m	language:JavaScript	class:ProgramState
+port	/usr/local/lib/python2.7/dist-packages/py3status/modules/mpdstatus.py	/^    port = 6600$/;"	v	language:Python	class:Py3status
+posix_error	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^void posix_error(int code, char *msg) \/* Posix-style error *\/$/;"	f	language:C++
+post_post	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^function post_post($dbh, $title, $msg, $me) {$/;"	f	language:PHP
+prev	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/cache.h	/^  cache prev;$/;"	m	language:C++	struct:cache_info
+previous	/usr/local/lib/python2.7/dist-packages/py3status/modules/mpdstatus.py	/^    def previous(self):$/;"	m	language:Python	class:Data
+PREVP	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm-new.c	67;"	d	language:C++	file:
+PREVP	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm.c	74;"	d	language:C++	file:
+PREV_BLKP	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm-new.c	60;"	d	language:C++	file:
+PREV_BLKP	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm.c	66;"	d	language:C++	file:
+print	/home/amgutier/www/cdb/public/vm/index.js	/^function print(arg) {$/;"	f	language:JavaScript
+printblock	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm-new.c	/^static void printblock(void *bp)$/;"	f	language:C++	file:
+printblock	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm-new.c	/^static void printblock(void *bp);$/;"	p	language:C++	file:
+printblock	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm.c	/^static void printblock(void *bp)$/;"	f	language:C++	file:
+printblock	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm.c	/^static void printblock(void *bp);$/;"	p	language:C++	file:
+print_child_status	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/runtrace.c	/^void print_child_status()$/;"	f	language:C++
+print_child_status	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/runtrace.c	/^void print_child_status(void);$/;"	p	language:C++	file:
+ProgramState	/home/amgutier/www/cdb/public/vm/c0vm.js	/^var ProgramState = function(parsed_file, callback_dict) {$/;"	c	language:JavaScript
+prompt	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^char prompt[] = "tsh> ";    \/* command line prompt (DO NOT CHANGE) *\/$/;"	v	language:C++
+Pthread_cancel	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^void Pthread_cancel(pthread_t tid) {$/;"	f	language:C++
+Pthread_create	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^void Pthread_create(pthread_t *tidp, pthread_attr_t *attrp, $/;"	f	language:C++
+Pthread_detach	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^void Pthread_detach(pthread_t tid) {$/;"	f	language:C++
+Pthread_exit	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^void Pthread_exit(void *retval) {$/;"	f	language:C++
+Pthread_join	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^void Pthread_join(pthread_t tid, void **thread_return) {$/;"	f	language:C++
+Pthread_once	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^void Pthread_once(pthread_once_t *once_control, void (*init_function)()) {$/;"	f	language:C++
+Pthread_self	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^pthread_t Pthread_self(void) {$/;"	f	language:C++
+PTR2OFF	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm-new.c	68;"	d	language:C++	file:
+PTR2OFF	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm.c	73;"	d	language:C++	file:
+push	/home/amgutier/www/cdb/public/vm/c0vm.js	/^function push(v) {$/;"	f	language:JavaScript
+push	/home/amgutier/www/cdb/public/vm/c0vm.js	/^ProgramState.prototype.push = function(val) {$/;"	m	language:JavaScript	class:ProgramState
+PUT	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm-new.c	48;"	d	language:C++	file:
+PUT	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm.c	54;"	d	language:C++	file:
+put	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/cache.c	/^void put(char *resource, char *data) {$/;"	f	language:C++
+put	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/cache.h	/^void put(char *resource, char *data);$/;"	p	language:C++
+pw	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^	$pw = pg_escape_string($pw);$/;"	v	language:PHP
+pw	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^	$pw = pg_escape_string($pw);$/;"	v	language:PHP
+Py3status	/home/amgutier/weather_yahoo.py	/^class Py3status:$/;"	c	language:Python
+Py3status	/usr/local/lib/python2.7/dist-packages/py3status/modules/mpdstatus.py	/^class Py3status:$/;"	c	language:Python
+Py3status	/usr/local/lib/python2.7/dist-packages/py3status/modules/weather_yahoo.py	/^class Py3status:$/;"	c	language:Python
+qdict	/home/amgutier/.bashrc_gpi	/^qdict(){ grep $1 \/usr\/share\/dict\/words; }$/;"	f	language:Sh
+query	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^		$query = "SELECT * FROM Posts ORDER BY timestamp DESC, username LIMIT $count;";$/;"	v	language:PHP
+query	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^		$query = "SELECT * FROM Posts WHERE timestamp<'$pdate' AND username='$user' ORDER BY timestamp DESC, username LIMIT $count;";$/;"	v	language:PHP
+query	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^		$query = "SELECT * FROM Posts WHERE timestamp<'$pdate' ORDER BY timestamp DESC, username LIMIT $count;";$/;"	v	language:PHP
+query	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^		$query = "SELECT * FROM Posts WHERE username='$user' ORDER BY timestamp DESC, username LIMIT $count;";$/;"	v	language:PHP
+query	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^		$query = "SELECT * FROM Posts, Plikes WHERE Posts.pid = Plikes.pid AND timestamp>'$pdate' ORDER BY likes DESC, username LIMIT $count;";$/;"	v	language:PHP
+query	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^		$query = "SELECT * FROM Posts, Plikes WHERE Posts.pid = Plikes.pid ORDER BY likes, username;";$/;"	v	language:PHP
+query	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^	$query = "DELETE FROM Posts WHERE username='$user' AND pid='$pID';";$/;"	v	language:PHP
+query	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^	$query = "DELETE FROM Posts; DELETE FROM Users; ALTER SEQUENCE posts_pid_seq RESTART WITH 1";$/;"	v	language:PHP
+query	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^	$query = "INSERT INTO Likes VALUES ('$me', $pID);";$/;"	v	language:PHP
+query	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^	$query = "INSERT INTO Posts (username, title, text, timestamp) VALUES ('$me', '$title', '$msg', Now());";$/;"	v	language:PHP
+query	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^	$query = "INSERT INTO Users VALUES ('$user', '$pw');";$/;"	v	language:PHP
+query	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^	$query = "SELECT * FROM Likes WHERE pid='$pID' AND username='$me';";$/;"	v	language:PHP
+query	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^	$query = "SELECT * FROM Posts WHERE text LIKE '%$key%' OR title LIKE '%$key%' LIMIT $count";$/;"	v	language:PHP
+query	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^	$query = "SELECT count(*) AS likes FROM Likes WHERE username='$uID' GROUP BY username;";$/;"	v	language:PHP
+query	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^	$query = "SELECT count(*) AS posts FROM Posts WHERE username='$uID' GROUP BY username;";$/;"	v	language:PHP
+query	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^	$query = "SELECT count(likes.username), Posts.pid, Posts.title, Posts.text, Posts.timestamp, Posts.username " .$/;"	v	language:PHP
+query	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^	$query = "SELECT likes FROM Plikes WHERE pid='$pID';";$/;"	v	language:PHP
+query	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^	$query = "SELECT username FROM Posts GROUP BY username ORDER BY count(username) DESC LIMIT $count";$/;"	v	language:PHP
+query	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^	$query = "SELECT username FROM Users WHERE username LIKE '%$name%'";$/;"	v	language:PHP
+query	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^	$query = "SELECT username FROM Users WHERE username='$user' AND password='$pw';";$/;"	v	language:PHP
+Read	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^ssize_t Read(int fd, void *buf, size_t count) $/;"	f	language:C++
+readable	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/runtrace.c	/^int readable(int fd, int secs) $/;"	f	language:C++
+readable	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/runtrace.c	/^int readable(int fd, int secs);$/;"	p	language:C++	file:
+Readdir	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^struct dirent *Readdir(DIR *dirp)$/;"	f	language:C++
+read_requesthdrs	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/tiny/tiny.c	/^void read_requesthdrs(rio_t *rp) $/;"	f	language:C++
+read_requesthdrs	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/tiny/tiny.c	/^void read_requesthdrs(rio_t *rp);$/;"	p	language:C++	file:
+Realloc	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^void *Realloc(void *ptr, size_t size) $/;"	f	language:C++
+reconnect	/usr/local/lib/python2.7/dist-packages/py3status/modules/mpdstatus.py	/^    def reconnect(self):$/;"	m	language:Python	class:Data
+register	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^function register($dbh, $user, $pw) {$/;"	f	language:PHP
+remove_list	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm-new.c	/^static void remove_list(void *bp) {$/;"	f	language:C++	file:
+remove_list	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm-new.c	/^static void remove_list(void *bp);$/;"	p	language:C++	file:
+remove_list	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm.c	/^static inline void remove_list(void *bp) {$/;"	f	language:C++	file:
+remove_list	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm.c	/^static inline void remove_list(void *bp);$/;"	p	language:C++	file:
+request_timeout	/home/amgutier/weather_yahoo.py	/^    request_timeout = 10$/;"	v	language:Python	class:Py3status
+request_timeout	/usr/local/lib/python2.7/dist-packages/py3status/modules/weather_yahoo.py	/^    request_timeout = 10$/;"	v	language:Python	class:Py3status
+reset_database	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^function reset_database($dbh) {$/;"	f	language:PHP
+resource	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/cache.h	/^  char resource[MAXLINE];$/;"	m	language:C++	struct:cache_info
+result	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^	$result = pg_query($dbh, $query) or die("Error Liking Posts: " . pg_last_error());$/;"	v	language:PHP
+result	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^	$result = pg_query($dbh, $query) or die("unable to get recommended posts:" . pg_last_error());$/;"	v	language:PHP
+result	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^	$result = pg_query($dbh, $query) or die('Login Failed: ' . pg_last_error());$/;"	v	language:PHP
+result	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^	$result = pg_query($dbh, $query) or die('Posting Failed: ' . pg_last_error());$/;"	v	language:PHP
+result	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^	$result = pg_query($dbh, $query) or die('Unable to get most active users:' . pg_last_error());$/;"	v	language:PHP
+result	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^	$result = pg_query($dbh, $query) or die('Unable to get most active users:' . pg_last_error());$/;"	v	language:PHP
+result	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^	$result = pg_query($dbh, $query) or die('Unable to get timeline: ' . pg_last_error());$/;"	v	language:PHP
+result	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^	$result = pg_query($dbh, $query) or die('Unable to get timeline: ' . pg_last_error());$/;"	v	language:PHP
+result	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^	$result = pg_query($dbh, $query) or die('Unable to get timeline: ' . pg_last_error());$/;"	v	language:PHP
+result	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^	$result = pg_query($dbh, $query) or die('Unable to search: ' . pg_last_error());$/;"	v	language:PHP
+result	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^	$result = pg_query($dbh, $query);$/;"	v	language:PHP
+result	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^	$result = pg_query($dbh, $query);$/;"	v	language:PHP
+result	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^	$result = pg_query($dbh, $query);$/;"	v	language:PHP
+result	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^	$result = pg_query($dbh, $query);$/;"	v	language:PHP
+result	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^	$result = pg_query($dbh, $query);$/;"	v	language:PHP
+result	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^	$result = pg_query($dbh, $query);$/;"	v	language:PHP
+result	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^	$result = pg_query($dbh, $query);$/;"	v	language:PHP
+results	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^		$results = array("status" => 1, "posts" => array());$/;"	v	language:PHP
+results	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^		$results = array("status" => 1, "posts" => array());$/;"	v	language:PHP
+rio_read	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^static ssize_t rio_read(rio_t *rp, char *usrbuf, size_t n)$/;"	f	language:C++	file:
+rio_readinitb	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^void rio_readinitb(rio_t *rp, int fd) $/;"	f	language:C++
+Rio_readinitb	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^void Rio_readinitb(rio_t *rp, int fd)$/;"	f	language:C++
+rio_readlineb	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^ssize_t rio_readlineb(rio_t *rp, void *usrbuf, size_t maxlen) $/;"	f	language:C++
+Rio_readlineb	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^ssize_t Rio_readlineb(rio_t *rp, void *usrbuf, size_t maxlen) $/;"	f	language:C++
+Rio_readn	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^ssize_t Rio_readn(int fd, void *ptr, size_t nbytes) $/;"	f	language:C++
+rio_readn	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^ssize_t rio_readn(int fd, void *usrbuf, size_t n) $/;"	f	language:C++
+rio_readnb	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^ssize_t rio_readnb(rio_t *rp, void *usrbuf, size_t n) $/;"	f	language:C++
+Rio_readnb	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^ssize_t Rio_readnb(rio_t *rp, void *usrbuf, size_t n) $/;"	f	language:C++
+rio_writen	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^ssize_t rio_writen(int fd, void *usrbuf, size_t n) $/;"	f	language:C++
+Rio_writen	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^void Rio_writen(int fd, void *usrbuf, size_t n) $/;"	f	language:C++
+run_vm	/home/amgutier/www/cdb/public/vm/c0vm.js	/^function run_vm(vm) {$/;"	f	language:JavaScript
+S	/afs/andrew.cmu.edu/usr14/amgutier/private/f13/15122/hw9/c0vm.c	/^  stack S;     \/* operand stack *\/$/;"	m	language:C++	struct:frame	file:
+salt	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/config.php	/^$salt = "15-501";$/;"	v	language:PHP
+sandboxing	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/runtrace.c	/^int sandboxing = 0;$/;"	v	language:C++
+sbuf	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^char sbuf[MAXLINE];         \/* for composing sprintf messages *\/$/;"	v	language:C++
+search	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^function search($dbh, $key, $count = 50) {$/;"	f	language:PHP
+SEGPTR	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm-new.c	70;"	d	language:C++	file:
+SEGS	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm-new.c	39;"	d	language:C++	file:
+Select	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^int Select(int  n, fd_set *readfds, fd_set *writefds,$/;"	f	language:C++
+Sem_init	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^void Sem_init(sem_t *sem, int pshared, unsigned int value) $/;"	f	language:C++
+serve_dynamic	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/tiny/tiny.c	/^void serve_dynamic(int fd, char *filename, char *cgiargs) $/;"	f	language:C++
+serve_dynamic	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/tiny/tiny.c	/^void serve_dynamic(int fd, char *filename, char *cgiargs);$/;"	p	language:C++	file:
+serve_static	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/tiny/tiny.c	/^void serve_static(int fd, char *filename, int filesize) $/;"	f	language:C++
+serve_static	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/tiny/tiny.c	/^void serve_static(int fd, char *filename, int filesize);$/;"	p	language:C++	file:
+Setpgid	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^void Setpgid(pid_t pid, pid_t pgid) {$/;"	f	language:C++
+Setsockopt	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^void Setsockopt(int s, int level, int optname, const void *optval, int optlen) $/;"	f	language:C++
+set_breakpoint	/home/amgutier/www/cdb/public/vm/c0vm.js	/^ProgramState.prototype.set_breakpoint = function(function_index, opcode_index) {$/;"	m	language:JavaScript	class:ProgramState
+shellargs	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/runtrace.c	/^char *shellargs = NULL;$/;"	v	language:C++
+shellprog	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/runtrace.c	/^char *shellprog = ".\/tsh";$/;"	v	language:C++
+Sigaddset	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^void Sigaddset(sigset_t *set, int signum)$/;"	f	language:C++
+sigalrm_handler	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/runtrace.c	/^void sigalrm_handler(int sig) $/;"	f	language:C++
+sigchld_handler	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^sigchld_handler(int sig) $/;"	f	language:C++
+sigchld_handler	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^void sigchld_handler(int sig);$/;"	p	language:C++	file:
+Sigdelset	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^void Sigdelset(sigset_t *set, int signum)$/;"	f	language:C++
+Sigemptyset	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^void Sigemptyset(sigset_t *set)$/;"	f	language:C++
+Sigfillset	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^void Sigfillset(sigset_t *set)$/;"	f	language:C++
+sigint_handler	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^sigint_handler(int sig) $/;"	f	language:C++
+sigint_handler	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^void sigint_handler(int sig);$/;"	p	language:C++	file:
+Sigismember	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^int Sigismember(const sigset_t *set, int signum)$/;"	f	language:C++
+Signal	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^handler_t *Signal(int signum, handler_t *handler) $/;"	f	language:C++
+Signal	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^*Signal(int signum, handler_t *handler) $/;"	f	language:C++
+Signal	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^handler_t *Signal(int signum, handler_t *handler);$/;"	p	language:C++	file:
+Sigprocmask	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^void Sigprocmask(int how, const sigset_t *set, sigset_t *oldset)$/;"	f	language:C++
+sigquit_handler	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^sigquit_handler(int sig) $/;"	f	language:C++
+sigquit_handler	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^void sigquit_handler(int sig);$/;"	p	language:C++	file:
+Sigsuspend	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^int Sigsuspend(const sigset_t *set)$/;"	f	language:C++
+sigtstp_handler	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^sigtstp_handler(int sig) $/;"	f	language:C++
+sigtstp_handler	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^void sigtstp_handler(int sig);$/;"	p	language:C++	file:
+sio_error	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^void sio_error(char s[]) \/* Put error message and exit *\/$/;"	f	language:C++
+Sio_error	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^void Sio_error(char s[])$/;"	f	language:C++
+sio_ltoa	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^static void sio_ltoa(long v, char s[], int b) $/;"	f	language:C++	file:
+sio_putl	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^ssize_t sio_putl(long v) \/* Put long *\/$/;"	f	language:C++
+Sio_putl	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^ssize_t Sio_putl(long v)$/;"	f	language:C++
+sio_puts	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^ssize_t sio_puts(char s[]) \/* Put string *\/$/;"	f	language:C++
+Sio_puts	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^ssize_t Sio_puts(char s[])$/;"	f	language:C++
+sio_reverse	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^static void sio_reverse(char s[])$/;"	f	language:C++	file:
+sio_strlen	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^static size_t sio_strlen(char s[])$/;"	f	language:C++	file:
+size	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/cache.c	/^static int size;  \/\/ size of the cache$/;"	v	language:C++	file:
+Sleep	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^unsigned int Sleep(unsigned int secs) $/;"	f	language:C++
+Socket	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^int Socket(int domain, int type, int protocol) $/;"	f	language:C++
+ST	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	29;"	d	language:C++	file:
+StackFrame	/home/amgutier/www/cdb/public/vm/c0vm.js	/^var StackFrame = function(file, f) {$/;"	c	language:JavaScript
+Stat	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^void Stat(const char *filename, struct stat *buf) $/;"	f	language:C++
+state	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/runtrace.c	/^char *state;$/;"	v	language:C++
+state	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^    int state;              \/* UNDEF, BG, FG, or ST *\/$/;"	m	language:C++	struct:job_t	file:
+stderr	/afs/andrew.cmu.edu/usr14/amgutier/www/cc0.cgi	/^    stderr = open('\/tmp\/a.err', 'r')$/;"	v	language:Python
+stderr	/afs/andrew.cmu.edu/usr14/amgutier/www/cc0.cgi	/^stderr = open('\/tmp\/a.err', 'w')$/;"	v	language:Python
+STDIN	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	48;"	d	language:C++	file:
+STDOUT	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	47;"	d	language:C++	file:
+step	/home/amgutier/www/cdb/public/vm/c0vm.js	/^ProgramState.prototype.step = function() {$/;"	m	language:JavaScript	class:ProgramState
+strtolow	/home/amgutier/Dropbox/s15/15415/hw3/btree/SRC/get_predecessors.c	/^extern int strtolow(char *s);$/;"	p	language:C++	file:
+ST_INFILE	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	43;"	d	language:C++	file:
+ST_NORMAL	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	42;"	d	language:C++	file:
+ST_OUTFILE	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	44;"	d	language:C++	file:
+swriten	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/proxy.c	/^int swriten(int fd, void *usrbuf, size_t n) {$/;"	f	language:C++
+swriten	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/proxy.c	/^int swriten(int fd, void *usrbuf, size_t n);$/;"	p	language:C++	file:
+syncfd	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/runtrace.c	/^int syncfd[2];$/;"	v	language:C++
+tail	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/cache.c	/^cache tail;       \/\/ last element cache$/;"	v	language:C++
+thread	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/proxy.c	/^void *thread(void *arg) {$/;"	f	language:C++
+thread	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/proxy.c	/^void *thread(void *arg);$/;"	p	language:C++	file:
+timeline	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^		$timeline = array("status" => 1, "posts" => array());$/;"	v	language:PHP
+timeline	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^		$timeline = array("status" => 1, "posts" => array());$/;"	v	language:PHP
+timeline	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^		$timeline = array("status" => 1, "posts" => array());$/;"	v	language:PHP
+title	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^	$title = pg_escape_string($title);$/;"	v	language:PHP
+tracefile	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/runtrace.c	/^char *tracefile = NULL;$/;"	v	language:C++
+treesearch_predecessors	/home/amgutier/Dropbox/s15/15415/hw3/btree/SRC/get_predecessors.c	/^int treesearch_predecessors(PAGENO PageNo, char *key, int k, int *count,$/;"	f	language:C++
+uID	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^	$uID = pg_escape_string($uID);$/;"	v	language:PHP
+uID	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^	$uID = pg_escape_string($uID);$/;"	v	language:PHP
+UNDEF	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	26;"	d	language:C++	file:
+unix_error	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^void unix_error(char *msg) \/* Unix-style error *\/$/;"	f	language:C++
+unix_error	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^unix_error(char *msg)$/;"	f	language:C++
+unix_error	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^void unix_error(char *msg);$/;"	p	language:C++	file:
+usage	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/runtrace.c	/^void usage(char *msg)$/;"	f	language:C++
+usage	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/runtrace.c	/^void usage(char *msg);$/;"	p	language:C++	file:
+usage	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^usage(void) $/;"	f	language:C++
+usage	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^void usage(void);$/;"	p	language:C++	file:
+user	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^	$user = pg_escape_string($user);$/;"	v	language:PHP
+user	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^	$user = pg_escape_string($user);$/;"	v	language:PHP
+user	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^	$user = pg_escape_string($user);$/;"	v	language:PHP
+user	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^	$user = pg_escape_string($user);$/;"	v	language:PHP
+user	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^	$user = pg_escape_string($user);$/;"	v	language:PHP
+user	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^	$user = pg_escape_string($user);$/;"	v	language:PHP
+users	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^		$users = array();$/;"	v	language:PHP
+users	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^		$users = array();$/;"	v	language:PHP
+user_agent_hdr	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/proxy.c	/^static char *user_agent_hdr =$/;"	v	language:C++	file:
+user_search	/afs/andrew.cmu.edu/usr14/amgutier/www/cmupostly/functions.php	/^function user_search($dbh, $name) {$/;"	f	language:PHP
+V	/afs/andrew.cmu.edu/usr14/amgutier/private/f13/15122/hw9/c0vm.c	/^  c0_value *V; \/* local variables *\/$/;"	m	language:C++	struct:frame	file:
+V	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^void V(sem_t *sem) $/;"	f	language:C++
+verbose	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/cache.c	/^int verbose;$/;"	v	language:C++
+verbose	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/proxy.c	/^int verbose = 0;$/;"	v	language:C++
+verbose	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/runtrace.c	/^int verbose = 0;$/;"	v	language:C++
+verbose	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/tshlab-handout/tsh.c	/^int verbose = 0;            \/* if true, print additional output *\/$/;"	v	language:C++
+verbose	/home/amgutier/www/cdb/public/vm/c0vm.js	/^var verbose = false;$/;"	v	language:JavaScript
+Wait	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^pid_t Wait(int *status) $/;"	f	language:C++
+Waitpid	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^pid_t Waitpid(pid_t pid, int *iptr, int options) $/;"	f	language:C++
+weather_yahoo	/home/amgutier/weather_yahoo.py	/^    def weather_yahoo(self, i3s_output_list, i3s_config):$/;"	m	language:Python	class:Py3status
+weather_yahoo	/usr/local/lib/python2.7/dist-packages/py3status/modules/weather_yahoo.py	/^    def weather_yahoo(self, i3s_output_list, i3s_config):$/;"	m	language:Python	class:Py3status
+wrap_tag	/usr/local/lib/python2.7/dist-packages/py3status/modules/mpdstatus.py	/^    def wrap_tag(self, song, tag):$/;"	m	language:Python	class:Data
+Write	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^ssize_t Write(int fd, const void *buf, size_t count) $/;"	f	language:C++
+WSIZE	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm-new.c	36;"	d	language:C++	file:
+WSIZE	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/malloclab-handout/mm.c	42;"	d	language:C++	file:
+x	/home/amgutier/weather_yahoo.py	/^    x = Py3status()$/;"	v	language:Python	class:Py3status
+x	/usr/local/lib/python2.7/dist-packages/py3status/modules/mpdstatus.py	/^    x = Py3status()$/;"	v	language:Python	class:Py3status
+x	/usr/local/lib/python2.7/dist-packages/py3status/modules/weather_yahoo.py	/^    x = Py3status()$/;"	v	language:Python	class:Py3status
+xread	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^ssize_t xread(int fd, void *buf, size_t len) {$/;"	f	language:C++
+xread	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/csapp.c	/^ssize_t xread(int fd, void *buf, size_t len);$/;"	p	language:C++	file:
+_connect	/usr/local/lib/python2.7/dist-packages/py3status/modules/mpdstatus.py	/^    def _connect(self):$/;"	m	language:Python	class:Data
+_crop_text	/usr/local/lib/python2.7/dist-packages/py3status/modules/mpdstatus.py	/^    def _crop_text(self, text, length=32):$/;"	m	language:Python	class:Data
+_get_forecast	/home/amgutier/weather_yahoo.py	/^    def _get_forecast(self):$/;"	m	language:Python	class:Py3status
+_get_forecast	/usr/local/lib/python2.7/dist-packages/py3status/modules/weather_yahoo.py	/^    def _get_forecast(self):$/;"	m	language:Python	class:Py3status
+_get_icon	/home/amgutier/weather_yahoo.py	/^    def _get_icon(self, forecast):$/;"	m	language:Python	class:Py3status
+_get_icon	/usr/local/lib/python2.7/dist-packages/py3status/modules/weather_yahoo.py	/^    def _get_icon(self, forecast):$/;"	m	language:Python	class:Py3status
+__cache_h__	/afs/andrew.cmu.edu/usr14/amgutier/private/s15/15213/proxylab-handout/cache.h	5;"	d	language:C++
+__init__	/usr/local/lib/python2.7/dist-packages/py3status/modules/mpdstatus.py	/^    def __init__(self):$/;"	m	language:Python	class:Py3status
+__init__	/usr/local/lib/python2.7/dist-packages/py3status/modules/mpdstatus.py	/^    def __init__(self, exception):$/;"	m	language:Python	class:MPDstatusException
+__init__	/usr/local/lib/python2.7/dist-packages/py3status/modules/mpdstatus.py	/^    def __init__(self, host, port, password):$/;"	m	language:Python	class:Data
+__str__	/usr/local/lib/python2.7/dist-packages/py3status/modules/mpdstatus.py	/^    def __str__(self):$/;"	m	language:Python	class:MPDstatusException	file:

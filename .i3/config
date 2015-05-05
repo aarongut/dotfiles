@@ -21,8 +21,26 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
 
+# open web browser
+bindsym $mod+g exec google-chrome
+
 # toggle audio output
 bindsym $mod+Shift+A exec audiochngout
+
+#change brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 2
+bindsym XF86MonBrightnessUp exec xbacklight -inc 2
+
+# volume
+bindsym XF86AudioRaiseVolume exec amixer -D pulse sset Master 5%+
+bindsym XF86AudioLowerVolume exec amixer -D pulse sset Master 5%-
+bindsym XF86AudioMute exec amixer -q set Master toggle
+
+# media
+bindsym XF86AudioPlay exec mpc toggle
+
+# lock
+bindsym XF86ScreenSaver exec i3lock -c 2e93f4
 
 # kill focused window
 bindsym $mod+Shift+Q kill
@@ -111,6 +129,10 @@ bindsym $mod+Shift+R restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+E exit
 
+# auto setup display
+bindsym $mod+p exec xrandr --output VGA1 --left-of LVDS1 --auto
+bindsym $mod+Shift+P exec xrandr --output LVDS --auto --output VGA1 --same-as LVDS1
+
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
@@ -137,10 +159,18 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# move workspace between windows
+bindsym $mod+m move workspace to output left
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
+# Laptop Screen
+	output LVDS1
+	output LVDS2
 	status_command py3status
+	tray_output LVDS1
+	tray_output LVDS2
 	colors {
 		background #0c6fc4
 		statusline #eeeeee
@@ -153,12 +183,25 @@ bar {
 	font pango:DejaVu Sans Mono 10
 }
 
-#style stuffj
+bar {
+	output VGA1
+	output VGA2
+	status_command py3status --config ~/.config/i3status/small.conf
+	colors {
+		background #0c6fc4
+		statusline #eeeeee
+		active_workspace #4389c4 #4389c4 #eeeeee
+		focused_workspace #75a0c4 #75a0c4 #eeeeee
+		inactive_workspace #0c6fc4 #0c6fc4 #eeeeee
+		urgent_workspace #c40c0c #c40c0c #eeeeee
+		separator #eeeeee
+	}
+	font pango:DejaVu Sans Mono 9
+}
+
+#style stuff
 new_window normal
 hide_edge_borders both
-
-#rename workspace
-bindsim $mod+w exec i3-input -F 'rename workspace to "%s"' -P 'New name: '
 
 #colors
 client.focused            #0c6fc4 #0c6fc4 #eeeeee #2e93f4

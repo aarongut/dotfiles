@@ -35,6 +35,7 @@ syn keyword SALcontext                    CONTEXT
 syn keyword SALassertion                  OBLIGATION CLAIM LEMMA THEOREM
 syn keyword SALconstant                   TRUE FALSE
 syn keyword SALtemporalOp                 AX AG AF EX EG EF X G F
+syn keyword SALbuiltin			  EXEC PLAY PRINT SET WITH
 
 syn cluster SALtype                       add=SALbasicType,SALrangeType,SALrecordType,SALsetType,SALfunctionType,SALconstant,SALnumber
 syn cluster SALexpression                 add=SALlogicalOp,SALarithmeticOp,SALarithmetic,@SALtype,SALrelation,SALarrayExpr,SALquantifier
@@ -106,7 +107,7 @@ hi link     SALnumber                     Number
 hi link     SALnextVariable               Identifier
 hi link     SALtheoremDeclaration         Underlined
 hi link     SALtheoremName                Underlined
+hi link	    SALbuiltin			  Define
 
 " Set the current syntax
 let b:current_syntax = "sal"
-

@@ -4,10 +4,9 @@ general {
 	output_format = "i3bar"
 }
 
-order += "mpd_status"
+order += "mpdstatus"
 order += "disk /"
 order += "disk /home"
-order += "disk /home/amgutier/big"
 order += "wireless wlan0"
 order += "ethernet eth0"
 order += "battery 0"
@@ -47,11 +46,7 @@ disk "/home" {
 	format = " /home %free/%total"
 }
 
-disk "/home/amgutier/big" {
-	format = " ~/big %free/%total"
-}
-
-mpd_status {
+mpdstatus {
 	cache_timeout = 0
 	host = "localhost"
 	port = 6600
