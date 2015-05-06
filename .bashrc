@@ -1,4 +1,4 @@
-source .git-prompt.sh
+source ~/.git-prompt.sh
 
 # Append to the history file, don't overwrite it
 shopt -s histappend
@@ -19,9 +19,9 @@ export LESSOPEN='|/usr/local/bin/lesspipe.sh %s'
 
 # Prompt differs if SSH'ed or not
 if [ -n "$SSH_CLIENT" ]; then
-PS1='\n╭\[\e[0;31m\]$(__git_ps1 "(%s)")\[\033[32m\][\w]\[\033[0m\]\n╰\[\033[1;36m\]\u@buttstuff\[\033[1;33m\]\$ \[\033[0m\]'
+	PS1='\n╭\[\e[1;33m\]$(__git_ps1 "(%s)")\[\e[1;32m\][\w]\[\033[0m\]\n╰\[\033[1;36m\]\u@buttstuff\[\033[1;33m\]\$ \[\033[0m\]'
 else
-	PS1='\n╭\[\e[0;31m\]$(__git_ps1 "(%s)")\[\033[32m\][\w]\[\033[0m\]\n╰\[\033[1;36m\]\u\[\033[1;33m\]\$ \[\033[0m\]'
+	PS1='\n╭\[\e[1;33m\]$(__git_ps1 "(%s)")\[\033[32m\][\w]\[\033[0m\]\n╰\[\033[1;36m\]\u\[\033[1;33m\]\$ \[\033[0m\]'
 fi
 
 export XLISPPATH=/etc/nyquist/lib:/etc/nyquist/runtime
