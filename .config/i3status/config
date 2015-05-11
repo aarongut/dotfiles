@@ -10,7 +10,7 @@ order += "disk /home"
 order += "wireless wlan0"
 order += "ethernet eth0"
 order += "battery 0"
-order += "load"
+order += "cpu_usage"
 order += "weather_yahoo"
 order += "time"
 
@@ -32,10 +32,6 @@ battery 0 {
 
 time {
         format = "%m/%d/%Y %H:%M:%S"
-}
-
-load {
-        format = "%1min"
 }
 
 disk "/" {
