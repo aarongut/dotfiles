@@ -130,7 +130,7 @@ bindsym $mod+Shift+R restart
 bindsym $mod+Shift+E exit
 
 # auto setup display
-bindsym $mod+p exec xrandr --output VGA1 --left-of LVDS1 --auto
+bindsym $mod+p exec resetscreen
 bindsym $mod+Shift+P exec xrandr --output LVDS --auto --output VGA1 --same-as LVDS1
 
 # resize window (you can also use the mouse for that)
