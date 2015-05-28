@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+playing=($(mpc | grep "^\[playing\]"))
+
+if [ ! -z "$playing" ]; then
+	mpc -q pause;
+else
+	mpc -q play;
+fi

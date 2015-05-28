@@ -1,0 +1,13 @@
+#!/bin/bash
+
+i3status | while :
+do
+	read line
+	MPC=`mpc current`
+	if [[ -z $MPC ]]
+       	then
+		echo "$line" || exit 1
+	else
+		echo "Playing: $MPC | $line" || exit 1
+	fi
+done

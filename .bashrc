@@ -48,6 +48,7 @@ alias shell='ps -p $$ -o comm='
 alias math='rlwrap MathKernel'
 alias style='clang-format-3.5 -style=Google'
 alias telnet='rlwrap telnet'
+alias cdg='. cdg'
 
 # Enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile

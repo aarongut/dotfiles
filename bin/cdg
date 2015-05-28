@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# cd's to the parent directory until a .git folder is found
+while [ ! -d ".git" ] && [ ! "$PWD" == "/" ]
+do
+	cd ..
+done
