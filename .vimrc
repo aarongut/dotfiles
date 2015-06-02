@@ -36,3 +36,6 @@ else
 endif
 
 let g:airline_powerline_fonts=1
+
+" NERDTree binding
+map <C-n> :NERDTreeToggle<CR>
