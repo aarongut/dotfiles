@@ -50,5 +50,5 @@ mpdstatus {
 }
 
 weather_yahoo {
-	city_code = 'USPA1928'
+	city_code = 'USCA0987'
 }
