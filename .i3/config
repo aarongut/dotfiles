@@ -21,6 +21,9 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
 
+# search
+bindsym $mod+Tab exec tracker-needle
+
 # open web browser
 bindsym $mod+g exec google-chrome
 
