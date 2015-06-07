@@ -28,19 +28,19 @@ bindsym $mod+Tab exec tracker-needle
 bindsym $mod+g exec google-chrome
 
 # toggle audio output
-bindsym $mod+Shift+A exec audiochngout
+bindsym $mod+Shift+A exec --no-startup-id audiochngout
 
 #change brightness
-bindsym XF86MonBrightnessDown exec xbacklight -dec 2
-bindsym XF86MonBrightnessUp exec xbacklight -inc 2
+bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 2
+bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 2
 
 # volume
-bindsym XF86AudioRaiseVolume exec amixer -D pulse sset Master 5%+
-bindsym XF86AudioLowerVolume exec amixer -D pulse sset Master 5%-
-bindsym XF86AudioMute exec amixer -q set Master toggle
+bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -D pulse sset Master 5%+
+bindsym XF86AudioLowerVolume exec --no-startup-id amixer -D pulse sset Master 5%-
+bindsym XF86AudioMute exec --no-startup-id amixer -q set Master toggle
 
 # media
-bindsym XF86AudioPlay exec mpc toggle
+bindsym XF86AudioPlay exec --no-startup-id mpc toggle
 
 # lock
 bindsym XF86ScreenSaver exec i3lock -c 2e93f4
@@ -133,8 +133,8 @@ bindsym $mod+Shift+R restart
 bindsym $mod+Shift+E exit
 
 # auto setup display
-bindsym $mod+p exec resetscreen
-bindsym $mod+Shift+P exec xrandr --output LVDS --auto --output VGA1 --same-as LVDS1
+bindsym $mod+p exec --no-startup-id resetscreen
+bindsym $mod+Shift+P exec --no-startup-id xrandr --output LVDS --auto --output VGA1 --same-as LVDS1
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
