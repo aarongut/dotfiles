@@ -24,6 +24,8 @@ bindsym $mod+Return exec i3-sensible-terminal
 # search
 bindsym $mod+Tab exec tracker-needle
 
+for_window [class="Tracker-needle"] floating enable
+
 # open web browser
 bindsym $mod+g exec google-chrome
 
