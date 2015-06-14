@@ -24,7 +24,7 @@ export GIT_PS1_SHOWUPSTREAM="auto"
 export GIT_PS1_SHOWCOLORHINTS=1
 
 # Prompt differs if SSH'ed or not
-PS1='\n╭\[\e[1;33m\]$(__git_ps1 "(%s)")\[\e[1;32m\][\w]\[\033[0m\]\n╰\[\033[1;36m\]\u\[\e[38;5;212m\]@\[\e[38;5;214m\]\h\[\033[1;33m\]\$ \[\033[0m\]'
+PS1='\n╭\[\e[1;33m\]$(__git_ps1 "(%s)")\[\e[1;32m\][\w]\[\033[0m\]\n╰\[\033[1;36m\]\u\[\033[1;33m\]@\[\e[38;5;214m\]\h\[\033[1;33m\]\$ \[\033[0m\]'
 
 export XLISPPATH=/etc/nyquist/lib:/etc/nyquist/runtime
 
