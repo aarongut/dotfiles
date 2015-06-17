@@ -47,6 +47,10 @@ bindsym XF86AudioPlay exec --no-startup-id mpc toggle
 # lock
 bindsym XF86ScreenSaver exec i3lock -c 2e93f4
 
+# print screen
+bindsym Print exec scrot
+bindsym Mod1+Print exec scrot -s
+
 # kill focused window
 bindsym $mod+Shift+Q kill
 
