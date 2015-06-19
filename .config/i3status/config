@@ -47,7 +47,7 @@ mpdstatus {
 	host = "localhost"
 	port = 6600
 	format = "{state} {artist}: {title}"
-	length = 70
+	length = 60
 }
 
 weather_yahoo {
