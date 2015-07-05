@@ -37,20 +37,20 @@ else
   alias ls='ls --color=auto'
 fi
 
-alias grep='grep --color=auto'
+alias cdg='. cdg'
 alias coin='rlwrap coin' # by-setup-c0
 alias ed='ed -p:'
-alias sml='rlwrap sml'
-alias ocaml='rlwrap ocaml'
-alias m='ncmpcpp'
-alias killz='killall -9 '
+alias grep='grep --color=auto'
 alias hidden='ls -a | grep "^\..*"'
+alias killz='killall -9 '
+alias m='ncmpcpp'
+alias math='rlwrap MathKernel'
+alias ocaml='rlwrap ocaml'
 alias rm='rm -i'
 alias shell='ps -p $$ -o comm='
-alias math='rlwrap MathKernel'
+alias sml='rlwrap sml'
 alias style='clang-format-3.5 -style=Google'
 alias telnet='rlwrap telnet'
-alias cdg='. cdg'
 
 # Enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
