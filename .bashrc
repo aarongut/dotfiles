@@ -7,7 +7,7 @@ shopt -s histappend
 # Update the values of LINES and COLUMNS.
 shopt -s checkwinsize
 
-export PATH=$PATH:/opt/cc0/bin:~/bin
+export PATH=$PATH:/opt/cc0/bin:~/bin:/opt/android-studio/bin
 export EDITOR=vim
 export CLICOLOR=1
 export HISTCONTROL=ignoreboth
