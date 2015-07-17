@@ -43,6 +43,8 @@ bindsym XF86AudioMute exec --no-startup-id amixer -q set Master toggle
 
 # media
 bindsym XF86AudioPlay exec --no-startup-id mpc toggle
+bindsym XF86AudioNext exec --no-startup-id mpc next
+bindsym XF86AudioPrev exec --no-startup-id mpc prev
 
 # lock
 bindsym XF86ScreenSaver exec i3lock -c 2e93f4
@@ -181,13 +183,13 @@ bar {
 	tray_output LVDS1
 	tray_output LVDS2
 	colors {
-		background #0c6fc4
-		statusline #eeeeee
-		active_workspace #4389c4 #4389c4 #eeeeee
-		focused_workspace #75a0c4 #75a0c4 #eeeeee
-		inactive_workspace #0c6fc4 #0c6fc4 #eeeeee
-		urgent_workspace #c40c0c #c40c0c #eeeeee
-		separator #eeeeee
+		background #5f87af
+		statusline #ebf5ff
+		active_workspace #87afd7 #87afd7 #ebf5ff
+		focused_workspace #d7875f #d7875f #fff1eb
+		inactive_workspace #5f87af #5f87af #ebf5ff
+		urgent_workspace #e37f4d #e37f4d #fff1eb
+		separator #ebf5ff
 	}
 	font pango:DejaVu Sans Mono 10
 }
@@ -197,13 +199,13 @@ bar {
 	output VGA2
 	status_command py3status --config ~/.config/i3status/small.conf
 	colors {
-		background #0c6fc4
-		statusline #eeeeee
-		active_workspace #4389c4 #4389c4 #eeeeee
-		focused_workspace #75a0c4 #75a0c4 #eeeeee
-		inactive_workspace #0c6fc4 #0c6fc4 #eeeeee
-		urgent_workspace #c40c0c #c40c0c #eeeeee
-		separator #eeeeee
+		background #5f87af
+		statusline #ebf5ff
+		active_workspace #87afd7 #87afd7 #ebf5ff
+		focused_workspace #d7875f #d7875f #fff1eb
+		inactive_workspace #5f87af #5f87af #ebf5ff
+		urgent_workspace #e37f4d #e37f4d #fff1eb
+		separator #ebf5ff
 	}
 	font pango:DejaVu Sans Mono 9
 }
@@ -213,7 +215,17 @@ new_window normal
 hide_edge_borders both
 
 #colors
-client.focused            #0c6fc4 #0c6fc4 #eeeeee #2e93f4
-client.focused_inactive   #75a0c4 #75a0c4 #a3b9cc #2e93f4
-client.unfocused          #75a0c4 #75a0c4 #a3b9cc #2e93f4
-client.urgent             #c40c0c #c40c0c #eeeeee #2e93f4
+client.focused            #5f87af #5f87af #ebf5ff #87afd7
+client.focused_inactive   #87afd7 #87afd7 #ebf5ff #2e93f4
+client.unfocused          #87afd7 #87afd7 #ebf5ff #2e93f4
+client.urgent             #d7875f #d7875f #fff1eb #e37f4d
+
+#Bold primary 5f87Af
+#dull primary 87afd7
+#text primary ebf5ff
+#
+#bold contrast d7875f
+#dull contrast e37f4d
+#text contrast fff1eb
+#
+#Font color = background color 100% value, 8% saturation
