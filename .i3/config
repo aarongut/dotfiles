@@ -175,6 +175,13 @@ bindsym $mod+r mode "resize"
 # move workspace between windows
 bindsym $mod+m move workspace to output left
 
+set $base #5f88Af
+set $base_text #C1D6EA
+set $contrast #FFE181
+set $contrast_text #CBA62F
+set $bold #FFAA81
+set $bold_text #FFDECF
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
@@ -185,13 +192,13 @@ bar {
 	tray_output LVDS1
 	tray_output LVDS2
 	colors {
-		background #5f87af
-		statusline #ebf5ff
-		active_workspace #87afd7 #87afd7 #ebf5ff
-		focused_workspace #d7875f #d7875f #fff1eb
-		inactive_workspace #5f87af #5f87af #ebf5ff
-		urgent_workspace #e37f4d #e37f4d #fff1eb
-		separator #ebf5ff
+		background $base
+		statusline $base_text
+		active_workspace  $contrast $contrast $contrast_text
+		focused_workspace $contrast $contrast $contrast_text
+		inactive_workspace $base $base $base_text
+		urgent_workspace $bold $bold $bold_text
+		separator $base_text
 	}
 	font pango:DejaVu Sans Mono 10
 }
@@ -201,13 +208,13 @@ bar {
 	output VGA2
 	status_command py3status --config ~/.config/i3status/small.conf
 	colors {
-		background #5f87af
-		statusline #ebf5ff
-		active_workspace #87afd7 #87afd7 #ebf5ff
-		focused_workspace #d7875f #d7875f #fff1eb
-		inactive_workspace #5f87af #5f87af #ebf5ff
-		urgent_workspace #e37f4d #e37f4d #fff1eb
-		separator #ebf5ff
+		background $base
+		statusline $base_text
+		active_workspace  $contrast $contrast $contrast_text
+		focused_workspace $contrast $contrast $contrast_text
+		inactive_workspace $base $base $base_text
+		urgent_workspace $bold $bold $bold_text
+		separator $base_text
 	}
 	font pango:DejaVu Sans Mono 9
 }
@@ -217,17 +224,7 @@ new_window normal
 hide_edge_borders both
 
 #colors
-client.focused            #5f87af #5f87af #ebf5ff #87afd7
-client.focused_inactive   #87afd7 #87afd7 #ebf5ff #2e93f4
-client.unfocused          #87afd7 #87afd7 #ebf5ff #2e93f4
-client.urgent             #d7875f #d7875f #fff1eb #e37f4d
-
-#Bold primary 5f87Af
-#dull primary 87afd7
-#text primary ebf5ff
-#
-#bold contrast d7875f
-#dull contrast e37f4d
-#text contrast fff1eb
-#
-#Font color = background color 100% value, 8% saturation
+client.focused            $contrast $contrast $contrast_text $contrast
+client.focused_inactive   $base $base $base_text $base
+client.unfocused          $base $base $base_text $base
+client.urgent             $bold $bold $bold_text $bold
