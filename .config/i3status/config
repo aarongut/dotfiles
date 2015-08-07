@@ -29,6 +29,8 @@ ethernet eth0 {
 }
 
 battery 0 {
+	low_threshold = 10
+	threshold_type = percentage
 	last_full_capacity = false
         format = "%status %percentage %remaining"
 }
