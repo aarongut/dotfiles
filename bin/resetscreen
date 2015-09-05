@@ -2,4 +2,4 @@
 
 xrandr --output VGA1 --left-of LVDS1 --auto
 
-feh --randomize --bg-fill ~/Pictures/Backgrounds/*
+feh --randomize --bg-fill ~/Backgrounds/*
