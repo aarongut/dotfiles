@@ -197,7 +197,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # move workspace between windows
-bindsym $mod+m move workspace to output left
+bindsym $mod+m move workspace to output up
 
 set $base #5f88Af
 set $base_text #C1D6EA
