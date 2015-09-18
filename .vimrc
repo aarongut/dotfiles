@@ -17,11 +17,11 @@ set smartindent
 
 " Show multicharacter commands as they are being typed
 set showcmd
-set background=dark
 set laststatus=2
 set noshowmode
 set incsearch
 colorscheme distinguished
+set background=dark
 
 execute pathogen#infect()
 
