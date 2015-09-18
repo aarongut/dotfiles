@@ -1,0 +1,9 @@
+#!/bin/bash
+
+IMG=/tmp/lock.png
+SCREENSHOT="scrot $IMG"
+
+$SCREENSHOT
+convert -scale 10% -scale 1000% $IMG $IMG
+i3lock -i $IMG
+rm -f $IMG
