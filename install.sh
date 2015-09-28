@@ -2,6 +2,6 @@ git pull origin master;
 git submodule sync;
 git submodule update;
 
-rsync --exclude ".git/" --exclude ".git*" --exclude "install.sh" -avhE  --no-perms . ~;
+rsync --exclude ".git/" --exclude ".git*" --exclude "install.sh" --exclude "py3status" -avhE  --no-perms . ~;
 
 source ~/.bashrc
