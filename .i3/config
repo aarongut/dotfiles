@@ -210,10 +210,6 @@ set $bold_text #FFDECF
 # finds out, if available)
 bar {
 # Laptop Screen
-	output LVDS1
-	output LVDS2
-	output LVDS-1
-	output DP-1
 	status_command py3status
 	colors {
 		background $base
@@ -225,22 +221,6 @@ bar {
 		separator $base_text
 	}
 	font pango:DejaVu Sans Mono 10
-}
-
-bar {
-	output VGA1
-	output VGA2
-	status_command py3status --config ~/.config/i3status/small.conf
-	colors {
-		background $base
-		statusline $base_text
-		active_workspace  $contrast $contrast $contrast_text
-		focused_workspace $contrast $contrast $contrast_text
-		inactive_workspace $base $base $base_text
-		urgent_workspace $bold $bold $bold_text
-		separator $base_text
-	}
-	font pango:DejaVu Sans Mono 9
 }
 
 #style stuff
