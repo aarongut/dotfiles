@@ -44,3 +44,7 @@ map <C-n> :NERDTreeToggle<CR>
 " easytags prefers local tag files
 set tags=./tags
 let g:easytags_dynamic_files = 1
+
+" merlin
+let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
+execute "set rtp+=" . g:opamshare . "/merlin/vim"
