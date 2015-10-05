@@ -1,4 +1,5 @@
 git pull origin master;
+git submodule init;
 git submodule sync;
 git submodule update;
 
