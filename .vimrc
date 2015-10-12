@@ -48,3 +48,9 @@ let g:easytags_dynamic_files = 1
 " merlin
 let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
 execute "set rtp+=" . g:opamshare . "/merlin/vim"
+
+" set light mode?
+if !empty($LC_LIGHT_BG)
+	colorscheme solarized
+	set background=light
+endif
