@@ -215,7 +215,7 @@ set $bold_text #FFDECF
 # finds out, if available)
 bar {
 # Laptop Screen
-	status_command py3status
+	status_command py3status -i ~/.dotfiles/py3status/
 	colors {
 		background $base
 		statusline $base_text
