@@ -20,7 +20,7 @@ set showcmd
 set laststatus=2
 set noshowmode
 set incsearch
-colorscheme distinguished
+colorscheme materialbox
 set background=dark
 
 execute pathogen#infect()

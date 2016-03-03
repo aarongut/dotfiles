@@ -19,7 +19,7 @@ export GIT_PS1_SHOWSTASHSTATE=1
 export GIT_PS1_SHOWUPSTREAM="auto"
 export GIT_PS1_SHOWCOLORHINTS=1
 
-PS1=$'\n╭%{$fg[yellow]%}$(__git_ps1 "(%s)")%{$fg[green]%}[%~]%{$reset_color%}\n╰%{$fg[cyan]%}%n%{$fg[yellow]%}@%{%F{214}%}%m%f%{$reset_color%}%# '
+PS1=$'\n╭%{$fg[yellow]%}$(__git_ps1 "(%s)")%{$fg[green]%}[%~]%{$reset_color%}\n╰%{$fg[red]%}%n%{$fg[blue]%}@%{%F{214}%}%m%f%{$reset_color%}%# '
 
 alias cdg='. cdg'
 alias coin='rlwrap coin' # by-setup-c0
@@ -49,10 +49,6 @@ fi
 
 # Turn off the ability for other people to message your terminal using wall
 mesg n
-
-# OPAM configuration
-. /home/amgutier/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
-eval `opam config env`
 
 export SMLNJ_HOME=/usr
 
