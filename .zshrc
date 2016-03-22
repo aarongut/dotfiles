@@ -2,6 +2,12 @@ autoload -U colors && colors
 
 source ~/.git-prompt.sh
 
+if [[ -f .zshrc_local ]]
+then
+  source .zshrc_local
+else
+fi
+
 export PATH=$PATH:/opt/cc0/bin:~/bin:/opt/android-studio/bin:/opt/smlnj/bin
 export EDITOR=vim
 export CLICOLOR=1
