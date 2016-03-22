@@ -28,7 +28,6 @@ alias fuck='sudo $(history -p \!\!)'
 alias grep='grep --color=auto'
 alias hidden='ls -a | grep "^\..*"'
 alias killz='killall -9 '
-alias ls="ls --color=always"
 alias m='ncmpcpp'
 alias math='rlwrap MathKernel'
 alias ocaml='rlwrap ocaml'
@@ -38,6 +37,15 @@ alias shell='ps -p $$ -o comm='
 alias sml='rlwrap sml'
 alias style='clang-format-3.5 -style=Google'
 alias telnet='rlwrap telnet'
+
+# Enable color support of ls and also add handy aliases
+# Mac OS doesn't support --color flag for ls, needs -G instead.
+if [[ `uname` = "Darwin" ]]
+then
+  alias ls='ls -G'
+else
+  alias ls='ls --color=auto'
+fi
 
 # Turn off the ability for other people to message your terminal using wall
 mesg n

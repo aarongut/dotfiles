@@ -11,6 +11,11 @@
 
 set $mod Mod1
 
+# Comment out for non-i3 gaps
+gaps inner 20
+for_window [class="^.*"] border pixel 1
+smart_gaps on
+
 # font for window titles. ISO 10646 = Unicode
 font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 font pango:DejaVu Sans Mono 10
@@ -210,7 +215,7 @@ set $bold_text #FFDECF
 # finds out, if available)
 bar {
 # Laptop Screen
-	status_command py3status
+	status_command py3status -i ~/.dotfiles/py3status/
 	colors {
 		background $base
 		statusline $base_text
