@@ -27,8 +27,9 @@ set hlsearch
 set ignorecase
 set smartcase
 
-colorscheme distinguished
+colorscheme materialbox
 set background=dark
+set t_ut=
 
 execute pathogen#infect()
 
