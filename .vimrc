@@ -19,8 +19,15 @@ set smartindent
 set showcmd
 set laststatus=2
 set noshowmode
+set title
+
+" Search betterer
 set incsearch
 colorscheme materialbox
+set hlsearch
+set ignorecase
+set smartcase
+
 set background=dark
 
 execute pathogen#infect()
