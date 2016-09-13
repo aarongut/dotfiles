@@ -1,4 +1,10 @@
 #!/bin/bash
-kinit
+klist -s
+if [ $? -eq 0 ]
+then
+	echo -e "\e[92mReusing old credentials\e[0m"
+else
+	kinit
+fi
 aklog
 klist

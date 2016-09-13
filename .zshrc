@@ -41,6 +41,7 @@ alias ocamldebug='rlwrap ocamldebug'
 alias rm='rm -i'
 alias shell='ps -p $$ -o comm='
 alias sml='rlwrap sml'
+alias sshp='ssh -o PubkeyAuthentication=no'
 alias style='clang-format-3.5 -style=Google'
 alias telnet='rlwrap telnet'
 

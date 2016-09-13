@@ -29,6 +29,7 @@ set ignorecase
 set smartcase
 
 set background=dark
+set t_ut=
 
 execute pathogen#infect()
 
