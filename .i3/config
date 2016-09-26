@@ -204,12 +204,12 @@ bindsym $mod+r mode "resize"
 # move workspace between windows
 bindsym $mod+m move workspace to output up
 
-set $base #5f88Af
-set $base_text #C1D6EA
-set $contrast #FFE181
-set $contrast_text #CBA62F
-set $bold #FFAA81
-set $bold_text #FFDECF
+set $base #282828
+set $base_text #eceff1
+set $contrast #303f9f
+set $contrast_text #eceff1
+set $bold #f57f17
+set $bold_text #eceff1
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)

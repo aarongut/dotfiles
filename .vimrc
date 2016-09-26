@@ -23,11 +23,11 @@ set title
 
 " Search betterer
 set incsearch
+colorscheme materialbox
 set hlsearch
 set ignorecase
 set smartcase
 
-colorscheme materialbox
 set background=dark
 set t_ut=
 
