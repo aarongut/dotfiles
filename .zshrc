@@ -57,10 +57,6 @@ fi
 # Turn off the ability for other people to message your terminal using wall
 mesg n
 
-# OPAM configuration
-. /home/amgutier/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
-eval `opam config env`
-
 export SMLNJ_HOME=/usr
 
 # The following lines were added by compinstall

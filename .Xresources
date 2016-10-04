@@ -1,31 +1,38 @@
 URxvt.scrollBar: false
-urxvt.font: xft:DejavuSansMono:pixelsize=9
+urxvt.font: xft:DejavuSansMono:pixelsize=12
 URxvt.letterSpace: -1
 
-! tangoesque scheme
-*background: #111111
-*foreground: #eeeeee
-! Black (not tango) + DarkGrey
-*color0:  #000000
-*color8:  #444743
+*background: #282828
+*foreground: #eceff1
+
+! Black + DarkGrey
+*color0: #1d272b
+*color8: #263238
+
 ! DarkRed + Red
-*color1:  #ff6565
-*color9:  #ff8d8d
+*color1: #c62828
+*color9: #cc241d
+
 ! DarkGreen + Green
-*color2:  #93e44f
-*color10: #c8e7a8
+*color2: #2e7d32
+*color10: #43a0f7
+
 ! DarkYellow + Yellow
-*color3:  #eab93d
-*color11: #ffc123
+*color3: #f57f17
+*color11: #fdd835
+
 ! DarkBlue + Blue
-*color4:  #204ad4
-*color12: #3465a4
+*color4: #1565c0
+*color12: #1e88e5
+
 ! DarkMagenta + Magenta
-*color5:  #ce5c00
-*color13: #f57900
-!DarkCyan + Cyan (both not tango)
-*color6:  #89b6e2
-*color14: #46a4ff
+*color5: #6a1b9a
+*color13: #8e24aa
+
+! Dark Cyan + Cyan
+*color6: #303f9f
+*color14: #3949ab
+
 ! LightGrey + White
-*color7:  #cccccc
-*color15: #ffffff
+*color7: #eceff1
+*color15: #fafdff

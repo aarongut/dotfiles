@@ -2,18 +2,18 @@ general {
         colors = true
         interval = 5
 	output_format = "i3bar"
-	color_good = "#FFE181"
-	color_degraded = "#C1D6EA"
-	color_bad = "#FFAA81"
+	color_good = "#43a0f7"
+	color_degraded = "#1565c0"
+	color_bad = "#c62828"
 }
 
 order += "disk /"
-order += "ethernet eth0"
+order += "ethernet enp0s3"
 order += "battery 0"
 order += "weather_yahoo"
 order += "time"
 
-ethernet eth0 {
+ethernet enp0s3 {
         # if you use %speed, i3status requires root privileges
         format_up = "E: %ip (%speed)"
         format_down = "E: down"
