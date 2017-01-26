@@ -19,3 +19,6 @@
 [submodule ".vim/bundle/vim-colors-solarized"]
 	path = .vim/bundle/vim-colors-solarized
 	url = git@github.com:altercation/vim-colors-solarized.git
+[submodule ".vim/bundle/vim-ispc"]
+	path = .vim/bundle/vim-ispc
+	url = https://github.com/jez/vim-ispc
