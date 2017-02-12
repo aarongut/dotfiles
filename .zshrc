@@ -27,6 +27,9 @@ export GIT_PS1_SHOWCOLORHINTS=1
 
 PS1=$'\n╭%{$fg[yellow]%}$(__git_ps1 "(%s)")%{$fg[green]%}[%~]%{$reset_color%}\n╰%{$fg[cyan]%}%n%{$fg[yellow]%}@%{%F{214}%}%m%f%{$reset_color%}%# '
 
+# set window title to working directory
+precmd () { print -Pn "\e]0;%~\a" }
+
 alias cdg='. cdg'
 alias coin='rlwrap coin' # by-setup-c0
 alias ed='ed -p:'
