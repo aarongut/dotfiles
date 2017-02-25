@@ -22,3 +22,6 @@
 [submodule ".vim/bundle/vim-ispc"]
 	path = .vim/bundle/vim-ispc
 	url = https://github.com/jez/vim-ispc
+[submodule ".vim/bundle/vim-easytags"]
+	path = .vim/bundle/vim-easytags
+	url = git@github.com:xolox/vim-easytags.git
