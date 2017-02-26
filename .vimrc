@@ -2,49 +2,43 @@
 set nocompatible
 set backspace=indent,eol,start
 
-" Helpful information: cursor position in bottom right, line numbers on left
-set ruler
-set number
+execute pathogen#infect()
 
 " Enable filetype detection and syntax hilighting
 syntax on
 filetype on
 filetype indent on
 filetype plugin on
-
-" Indent as intelligently as vim knows how
 set smartindent
-
-" Show multicharacter commands as they are being typed
-set showcmd
-set laststatus=2
-set noshowmode
-set title
 
 " Search betterer
 set incsearch
-colorscheme materialbox
 set hlsearch
 set ignorecase
 set smartcase
 
+" Visual setup
+set number
+set noshowmode
+set title
+set showcmd
+set laststatus=2
 set background=dark
+colorscheme materialbox
 set t_ut=
-
-execute pathogen#infect()
+let g:airline_theme='lucius'
+let g:airline_powerline_fonts=1
 
 " highlight long lines (over 80 char)
 if exists('+colorcolumn')
-    set colorcolumn=80
+	set colorcolumn=80
 else
 endif
 
 if exists('+mouse')
-    set mouse=a
+	set mouse=a
 else
 endif
-
-let g:airline_powerline_fonts=1
 
 " NERDTree binding
 map <C-n> :NERDTreeToggle<CR>
@@ -60,5 +54,6 @@ execute "set rtp+=" . g:opamshare . "/merlin/vim"
 " set light mode?
 if !empty($LC_LIGHT_BG)
 	colorscheme solarized
+	let g:airline_theme='solarized'
 	set background=light
 endif
