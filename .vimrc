@@ -50,7 +50,7 @@ let g:airline_powerline_fonts=1
 map <C-n> :NERDTreeToggle<CR>
 
 " easytags prefers local tag files
-set tags=./tags
+set tags=./tags,../tags,../../tags,../../../tags
 let g:easytags_dynamic_files = 1
 
 " merlin
