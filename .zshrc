@@ -32,11 +32,13 @@ precmd () { print -Pn "\e]0;%~\a" }
 
 alias cdg='. cdg'
 alias coin='rlwrap coin' # by-setup-c0
+alias dark='export LC_LIGHT_BG='
 alias ed='ed -p:'
 alias fuck='sudo $(history -p \!\!)'
 alias grep='grep --color=auto'
 alias hidden='ls -a | grep "^\..*"'
 alias killz='killall -9 '
+alias light='export LC_LIGHT_BG=1'
 alias m='ncmpcpp'
 alias math='rlwrap MathKernel'
 alias ocaml='rlwrap ocaml'
