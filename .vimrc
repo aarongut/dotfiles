@@ -53,7 +53,7 @@ execute "set rtp+=" . g:opamshare . "/merlin/vim"
 
 " set light mode?
 if !empty($LC_LIGHT_BG)
-	colorscheme solarized
+	colorscheme default
 	let g:airline_theme='solarized'
 	set background=light
 endif
