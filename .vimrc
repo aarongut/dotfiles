@@ -40,6 +40,9 @@ if exists('+mouse')
 else
 endif
 
+" F5 to trim trailing whitespace
+map <silent> <F5> :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :nohl <Bar> :unlet _s <CR>
+
 " NERDTree binding
 map <C-n> :NERDTreeToggle<CR>
 
@@ -53,7 +56,7 @@ execute "set rtp+=" . g:opamshare . "/merlin/vim"
 
 " set light mode?
 if !empty($LC_LIGHT_BG)
-	colorscheme solarized
+	colorscheme default
 	let g:airline_theme='solarized'
 	set background=light
 endif
