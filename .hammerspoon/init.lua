@@ -38,7 +38,7 @@ end tell
 end
 
 -- Open a new iTerm window
-hotkey.bind(hyper, 't', function () newTerm() end)
+hotkey.bind(hyper, 'c', function () newTerm() end)
 
 local screen = require 'hs.screen'
 local window = require 'hs.window'
@@ -179,7 +179,7 @@ function hydraGenerateHints (hydra)
   local height = hints.size * 2 + hints.size / 2
   local totalHeight = numHints * height
 
-  local left = b.w / 2 - hints.width / 2
+  local left = b.w / 2 - hints.width / 2 - 50
   local top  = b.h / 2 - totalHeight / 2
 
   local y = top
