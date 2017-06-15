@@ -1,0 +1,6 @@
+#!/bin/bash
+
+MSG=$@
+
+echo -e '\a'
+osascript -e "tell application (path to frontmost application as text) to display dialog \"$MSG\" buttons {\"OK\"} with icon note" &> /dev/null
