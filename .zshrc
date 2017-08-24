@@ -2,9 +2,9 @@ autoload -U colors && colors
 
 source ~/.git-prompt.sh
 
-if [[ -f .zshrc_local ]]
+if [[ -f ~/.zshrc_local ]]
 then
-  source .zshrc_local
+  source ~/.zshrc_local
 else
 fi
 
@@ -25,7 +25,7 @@ export GIT_PS1_SHOWSTASHSTATE=1
 export GIT_PS1_SHOWUPSTREAM="auto"
 export GIT_PS1_SHOWCOLORHINTS=1
 
-PS1=$'\n╭%{$fg[yellow]%}$(__git_ps1 "(%s)")%{$fg[green]%}[%~]%{$reset_color%}\n╰%{$fg[cyan]%}%n%{$fg[yellow]%}@%{%F{214}%}%m%f%{$reset_color%}%# '
+PS1=$'\n╭%{$fg[yellow]%}$(__git_ps1 "(%s)")%{$fg[green]%}[%~]%{$reset_color%}\n╰%# '
 
 # set window title to working directory
 precmd () { print -Pn "\e]0;%~\a" }
