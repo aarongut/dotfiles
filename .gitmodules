@@ -21,7 +21,7 @@
 	url = git@github.com:altercation/vim-colors-solarized.git
 [submodule ".vim/bundle/vim-ispc"]
 	path = .vim/bundle/vim-ispc
-	url = https://github.com/jez/vim-ispc
+	url = git@github.com:jez/vim-ispc
 [submodule ".vim/bundle/vim-easytags"]
 	path = .vim/bundle/vim-easytags
 	url = git@github.com:xolox/vim-easytags.git
@@ -37,3 +37,9 @@
 [submodule ".vim/bundle/vim-airline-themes"]
 	path = .vim/bundle/vim-airline-themes
 	url = git@github.com:vim-airline/vim-airline-themes.git
+[submodule ".vim/bundle/vimproc.vim"]
+	path = .vim/bundle/vimproc.vim
+	url = git@github.com:Shougo/vimproc.vim.git
+[submodule ".vim/bundle/typescript-vim"]
+	path = .vim/bundle/typescript-vim
+	url = git@github.com:leafgarland/typescript-vim.git
