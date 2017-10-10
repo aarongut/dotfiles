@@ -15,7 +15,7 @@ local hotkey = require 'hs.hotkey'
 
 hs.alert.defaultStyle.radius = 2
 hs.alert.defaultStyle.textSize = 22
-hs.alert.defaultStyle.textFont = 'Menlo'
+hs.alert.defaultStyle.textFont = 'Helvetica Neue'
 hs.alert.defaultStyle.textColor = { white = 1, alpha = 0.95 }
 hs.alert.defaultStyle.strokeColor = { white = 1, alpha = 0 }
 hs.alert.defaultStyle.fillColor = { white = 0.2, alpha = 0.9 }
@@ -32,13 +32,33 @@ hs.alert.show('Config loaded')
 function newTerm()
   local iterm = [[ tell application "iTerm"
   create window with default profile
+  activate
 end tell
 ]]
   hs.osascript.applescript(iterm)
 end
 
+function newBrowser()
+  local chrome = [[ tell application "Google Chrome"
+  make new window
+  activate
+end tell
+]]
+  hs.osascript.applescript(chrome)
+end
+
 -- Open a new iTerm window
-hotkey.bind(hyper, 'c', function () newTerm() end)
+hotkey.bind(hyper, 'c', newTerm)
+-- Open a new Chrome window
+hotkey.bind(hyper, 'g', newBrowser)
+
+-- Open a url (or prompt for one) and open as a chrome web app
+function webApp(app)
+ local web = [[
+do shell script "~/bin/webapp APP"
+]]
+  hs.osascript.applescript(string.gsub(web, "APP", app))
+end
 
 local screen = require 'hs.screen'
 local window = require 'hs.window'
@@ -57,7 +77,7 @@ local timer   = require 'hs.timer'
 local hints = {
   font = 'Helvetica Neue',
   size = 36,
-  width = 200,
+  width = 300,
   duration = 2,
   fadeIn = 0.2,
   fadeOut = 0.3,
@@ -134,14 +154,6 @@ function hints.hint (x, y, key, msg, color)
   }
 end
 
-function webApp(app)
- local web = [[
-do shell script "/Applications/Google\\ Chrome.app/Contents/MacOS/Google\\ Chrome --app=\"APP\""
-]]
-  hs.osascript.applescript(string.gsub(web, "APP", app))
-end
-
-
 --------------------------------------------------------------------------------
 -- Hydra -----------------------------------------------------------------------
 
@@ -155,9 +167,12 @@ local hydraDefinitions = {
     master = true,
     actions = {
       { mod = '', key = 'A', hint = 'Asana', target = function() webApp('https://app.asana.com') end, exit = true },
+      { mod = '', key = 'G', hint = 'Google Chrome', target = newBrowser, exit = true },
+      { mod = '', key = 'N', hint = 'New York Times', target = function() webApp('http://app.nytimes.com') end, exit = true },
       { mod = '', key = 'M', hint = 'Messenger', target = function() webApp('https://messenger.com') end, exit = true },
       { mod = '', key = 'S', hint = 'Slack', target = function() hs.application.launchOrFocus('Slack')  end, exit = true },
-      { mod = '', key = 'T', hint = 'Terminal', target = function() newTerm() end, exit = true },
+      { mod = '', key = 'T', hint = 'Terminal', target = newTerm, exit = true },
+      { mod = '', key = 'W', hint = 'WebApp', target = function() webApp('') end, exit = true },
     },
     hydras = {}
   }
@@ -272,8 +287,8 @@ function hydraInit (parentHydra, hydras)
     -- add actions
     for _, action in ipairs(hydra.actions) do
       hydra.modal:bind(action.mod, action.key, function ()
-        action.target ()
         if action.exit then hydraExitAllAndHideHints () end
+        action.target ()
       end)
       log.i("hydra [" .. hydra.hint .. "] binding action " .. action.hint)
     end

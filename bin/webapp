@@ -1,0 +1,18 @@
+#!/bin/bash
+
+APP=$1
+
+function app {
+	APP=$(echo $1 | sed -E "s/^(http)?(s)?(:\/\/)?(.+\..+)$/http\2:\/\/\4/")
+	"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --app="$APP" &> /dev/null
+}
+
+if [[ -z $APP ]]; then
+	APP=$(osascript -e 'set Site to text returned of (display dialog "URL" buttons {"Cancel", "OK"} default button "OK" default answer "")')
+fi
+
+if [[ -z $APP ]]; then
+	exit 1
+fi
+
+app $APP
