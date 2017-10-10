@@ -6,4 +6,4 @@ git submodule update;
 
 cd .vim/bundle/vimproc.vim && make && cd ../../..
 
-rsync --exclude ".git/" --exclude ".git*" --exclude "install.sh" --exclude "py3status" --exclude "bin/" -avhE  --no-perms . ~;
+rsync --exclude ".git/" --exclude ".git*" --exclude "install" --exclude "py3status" --exclude "bin/" -avhE  --no-perms . ~;
