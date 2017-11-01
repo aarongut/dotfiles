@@ -50,6 +50,21 @@ map <C-n> :NERDTreeToggle<CR>
 set tags=./tags,../tags,../../tags,../../../tags
 let g:easytags_dynamic_files = 1
 
+" FZF
+set rtp+=/usr/local/opt/fzf
+nmap <C-p> :Files<CR>
+
+" Ack
+if executable('ag')
+	let g:ackprg = 'ag --vimgrep'
+endif
+
+nmap <Leader>a :Ack!<Space>
+
+" quickfix
+nmap <Leader>c :cclose<CR>
+nmap <Leader>C :copen<CR>
+
 " merlin
 let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
 execute "set rtp+=" . g:opamshare . "/merlin/vim"
