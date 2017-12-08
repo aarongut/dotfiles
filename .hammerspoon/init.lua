@@ -9,7 +9,7 @@ log.i('initializing')
 --------------------------------------------------------------------------------
 -- General ---------------------------------------------------------------------
 
-local hyper = {'cmd', 'shift'}
+local hyper = {'cmd', 'ctrl', 'shift'}
 
 local hotkey = require 'hs.hotkey'
 
@@ -47,11 +47,6 @@ end tell
   hs.osascript.applescript(chrome)
 end
 
--- Open a new iTerm window
-hotkey.bind(hyper, 'c', newTerm)
--- Open a new Chrome window
-hotkey.bind(hyper, 'g', newBrowser)
-
 -- Open a url (or prompt for one) and open as a chrome web app
 function webApp(app)
  local web = [[
@@ -59,6 +54,14 @@ do shell script "~/bin/webapp APP"
 ]]
   hs.osascript.applescript(string.gsub(web, "APP", app))
 end
+
+-- Open a new iTerm window
+hotkey.bind(hyper, 'c', newTerm)
+-- Open a new Chrome window
+hotkey.bind(hyper, 'g', newBrowser)
+-- Open a webapp
+hotkey.bind(hyper, 'w', function () webApp("") end)
+
 
 local screen = require 'hs.screen'
 local window = require 'hs.window'

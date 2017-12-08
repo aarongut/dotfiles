@@ -40,15 +40,14 @@ if exists('+mouse')
 else
 endif
 
+" look for tags file along path
+set tags=tags;/
+
 " F5 to trim trailing whitespace
 map <silent> <F5> :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :nohl <Bar> :unlet _s <CR>
 
 " NERDTree binding
 map <C-n> :NERDTreeToggle<CR>
-
-" easytags prefers local tag files
-set tags=./tags,../tags,../../tags,../../../tags
-let g:easytags_dynamic_files = 1
 
 " FZF
 set rtp+=/usr/local/opt/fzf
