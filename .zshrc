@@ -8,7 +8,7 @@ then
 else
 fi
 
-export PATH=$PATH:/opt/cc0/bin:~/bin:/opt/android-studio/bin:/opt/smlnj/bin
+export PATH=$PATH:/opt/cc0/bin:~/bin:/opt/android-studio/bin:/opt/smlnj/bin:~/go/bin
 export EDITOR=vim
 export CLICOLOR=1
 
@@ -17,6 +17,7 @@ export MAIL=/var/spool/mail/amgutier
 export LSCOLORS=DxGxcxdxCxegedabagacad
 export TERM=xterm-256color #256 color support
 export LESSOPEN='|/usr/local/bin/lesspipe.sh %s'
+export LESS_ADVANCED_PREPROCESSOR=1
 
 setopt PROMPT_SUBST ;
 # for git-prompt
@@ -72,6 +73,9 @@ compinit
 
 setopt completeinword
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
+
+# Variables for man page viewing
+export HTMLPAGER=w3m
 
 # End of lines added by compinstall
 # Lines configured by zsh-newuser-install
