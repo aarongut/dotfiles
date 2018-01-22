@@ -1,0 +1,134 @@
+set realname = 'Aaron Gutierrez'
+alternates amgutier@(andrew|alumni)\.cmu\.edu aaron@aarongutierrez\.com aarongutierrez@asana\.com
+set use_from = yes
+set envelope_from ="yes"
+set sort_browser=alpha
+set sort=threads
+set sort_aux=date
+set send_charset="utf-8"
+alternative_order text/enriched text/plain text/html
+auto_view text/html
+
+hdr_order Date: From: User-Agent: X-Mailer \
+	To: Cc: Reply-To: Subject:
+
+ignore *
+unignore Date: From: User-Agent: X-Mailer \
+	To: Cc: Reply-To: Subject: X-PGP-Key:
+
+set edit_headers
+
+set status_on_top
+
+set header_cache=~/.mutt/header_cache/
+
+# Sidebar
+set sidebar_visible = no
+set sidebar_width = 30
+set sidebar_short_path=yes
+set sidebar_delim_chars='/'
+set sidebar_folder_indent=yes
+set sidebar_indent_string='  '
+set sidebar_new_mail_only=no
+set sidebar_divider_char='|'
+set mail_check_stats
+set sidebar_format='%B%?F? [%F]?%* %?N?(%N) ?%S'
+set sidebar_sort_method=path
+
+bind index,pager J sidebar-next
+bind index,pager K sidebar-prev
+bind index,pager V sidebar-open
+bind index,pager B sidebar-toggle-visible
+
+
+# Mailbox
+
+source "~/.mutt/gmail-password.sh |"
+set from = $imap_user
+
+macro index <F5> '<sync-mailbox><enter-command>source "~/.mutt/gmail-password.sh aarongutierrez@asana.com |"<enter><change-folder>!<enter>'
+macro index <F6> '<sync-mailbox><enter-command>source "~/.mutt/gmail-password.sh gutierrez.aaron.m@gmail.com |"<enter><change-folder>!<enter>'
+
+
+set spoolfile = imaps://imap.gmail.com/INBOX
+set folder = imaps://imap.gmail.com/
+set postponed="imaps://imap.gmail.com/[Gmail]/Drafts"
+set mbox="imaps://imap.gmail.com/[Gmail]/All Mail"
+
+set imap_check_subscribed
+
+unset imap_passive
+set imap_keepalive=300
+set mail_check=120
+
+unset record
+
+set smtp_url=smtps://$imap_user:$imap_pass@smtp.gmail.com
+set smtp_authenticators = 'gssapi:login'
+
+# SSL
+
+set ssl_force_tls = yes
+set ssl_starttls = yes
+set ssl_use_sslv2 = no
+set ssl_use_sslv3 = no
+set ssl_use_sslv3 = no
+set ssl_use_tlsv1 = no
+set ssl_use_tlsv1_1 = no
+set ssl_use_tlsv1_2 = yes
+set ssl_verify_dates = yes
+set ssl_verify_host = yes
+
+unset ssl_usesystemcerts
+set certificate_file=~/.mutt/gmailcerts
+
+source /usr/local/share/doc/mutt/samples/gpg.rc
+
+bind pager j next-line
+bind pager k previous-line
+bind pager g top
+bind pager G bottom
+set pager_stop
+
+set markers=no
+
+set editor="vim -n"
+
+set mailcap_path=~/.mutt/mailcap
+
+# Palette for use with the Linux console. Default background.
+
+color hdrdefault blue default
+color quoted blue default
+color signature blue default
+color attachment brightyellow default
+#color prompt brightmagenta black
+color message brightcyan default
+color error brightred default
+color indicator black cyan
+color status yellow blue
+color tree default default
+color normal default default
+color markers red default
+color search default default
+color tilde brightmagenta default
+color index blue default ~F
+color index brightcyan default "~N|~O"
+
+# Sidebar
+color sidebar_highlight black brightyellow
+color sidebar_divider blue blue
+color sidebar_flagged brightred default
+color sidebar_new green default
+
+# Urls
+color body brightblue default '(https?|HTTPS?)://[-\\\.,/%~_:?!@&=\#a-zA-Z0-9]+'
+
+# Markdown
+color body brightwhite default '\*+[^*]+\*+'
+color body brightwhite default '_+[^_]+_+'
+color body brightwhite brightblack '`[^`]+`'
+
+# Diff
+color body brightred default '^- .+'
+color body brightgreen default '^\+ .+'
