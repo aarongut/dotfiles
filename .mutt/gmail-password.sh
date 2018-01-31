@@ -2,7 +2,7 @@
 USER=$1
 
 if [ -z $USER ]; then
-	USER="gutierrez.aaron.m@gmail.com"
+	USER=$EMAIL
 fi
 
 PWORD=$(security find-generic-password -a "$USER" -s mutt-gmail -w)
