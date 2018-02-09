@@ -30,7 +30,7 @@ set sidebar_delim_chars='/'
 set sidebar_folder_indent=yes
 set sidebar_indent_string='  '
 set sidebar_new_mail_only=no
-set sidebar_divider_char='|'
+set sidebar_divider_char=' │ '
 set mail_check_stats
 set sidebar_format='%B%?F? [%F]?%* %?N?(%N) ?%S'
 set sidebar_sort_method=path
@@ -106,7 +106,7 @@ color attachment brightyellow default
 color message brightcyan default
 color error brightred default
 color indicator black cyan
-color status yellow blue
+color status brightyellow blue
 color tree default default
 color normal default default
 color markers red default
@@ -117,12 +117,12 @@ color index brightcyan default "~N|~O"
 
 # Sidebar
 color sidebar_highlight black brightyellow
-color sidebar_divider blue blue
+color sidebar_divider blue default
 color sidebar_flagged brightred default
 color sidebar_new green default
 
 # Urls
-color body brightblue default '(https?|HTTPS?)://[-\\\.,/%~_:?!@&=\#a-zA-Z0-9]+'
+color body blue default '(https?|HTTPS?)://[-\\\.,/%~_:?!@&=\#a-zA-Z0-9]+'
 
 # Markdown
 color body brightwhite default '\*+[^*]+\*+'
