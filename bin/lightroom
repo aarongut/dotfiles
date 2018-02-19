@@ -1,0 +1,24 @@
+#!/bin/bash
+
+set -e
+
+if [[ "$1" == "-n" ]]; then
+	echo "Linking to Network Drive"
+	open "smb://parkbench/media"
+	PICTURES=/Volumes/Media/Pictures
+elif [ -e /Volumes/Backup/Pictures ]; then
+	echo "Linking to External HDD"
+	PICTURES=/Volumes/Backup/Pictures
+else
+	echo "Linking to Google Drive"
+	PICTURES="/Volumes/GoogleDrive/My Drive/Photos"
+fi
+
+for dir in "$PICTURES"/* ; do
+	echo "$dir"
+	ln -sfn "$dir" ~/Photos/ ;
+done
+
+cd /gdrive/aaron@aarongutierrez.com && drive pull "Photos/Lightroom/Lightroom Catalog.lrcat"
+
+open "/gdrive/aaron@aarongutierrez.com/Photos/Lightroom/Lightroom Catalog.lrcat"
