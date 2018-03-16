@@ -15,7 +15,7 @@ export CLICOLOR=1
 export MAIL=/var/spool/mail/amgutier
 
 export LSCOLORS=DxGxcxdxCxegedabagacad
-export TERM=xterm-256color #256 color support
+export TERM=xterm-256color-italic
 export LESSOPEN='|/usr/local/bin/lesspipe.sh %s'
 export LESS_ADVANCED_PREPROCESSOR=1
 
