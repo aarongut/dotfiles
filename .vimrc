@@ -24,6 +24,7 @@ set title
 set showcmd
 set laststatus=2
 set background=dark
+let g:materialbox_italic=1
 colorscheme materialbox
 set t_ut=
 let g:airline_theme='lucius'
