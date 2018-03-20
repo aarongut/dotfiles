@@ -51,7 +51,8 @@ map <C-n> :NERDTreeToggle<CR>
 
 " FZF
 set rtp+=/usr/local/opt/fzf
-nmap <C-p> :Files<CR>
+nmap <C-P> :Files<CR>
+nmap <C-p> :GFiles<CR>
 
 " Ack
 if executable('ag')
