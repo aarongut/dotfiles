@@ -43,6 +43,3 @@
 [submodule ".vim/bundle/ack.vim"]
 	path = .vim/bundle/ack.vim
 	url = git@github.com:mileszs/ack.vim.git
-[submodule ".vim/bundle/ensime-vim"]
-	path = .vim/bundle/ensime-vim
-	url = git@github.com:ensime/ensime-vim.git
