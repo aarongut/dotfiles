@@ -7,10 +7,6 @@ git submodule init;
 git submodule sync;
 git submodule update;
 
-cd .vim/bundle/vimproc.vim
-make
-cd ../../..
-
 tic -x profiles/xterm-256color-italic.terminfo
 tic -x profiles/tmux-256color.terminfo
 
