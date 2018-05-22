@@ -19,6 +19,7 @@ unignore Date: From: User-Agent: X-Mailer \
 set edit_headers
 
 set status_on_top
+set index_format="%4C %Z %[%b %d %H:%M] %-15.15L (%?l?%4l&%4c?) %s"
 
 set header_cache=~/.mutt/header_cache/
 
@@ -105,7 +106,7 @@ color attachment brightyellow default
 #color prompt brightmagenta black
 color message brightcyan default
 color error brightred default
-color indicator black cyan
+color indicator black blue
 color status brightyellow blue
 color tree default default
 color normal default default
@@ -125,9 +126,9 @@ color sidebar_new green default
 color body blue default '(https?|HTTPS?)://[-\\\.,/%~_:?!@&=\#a-zA-Z0-9]+'
 
 # Markdown
-color body brightwhite default '\*+[^*]+\*+'
-color body brightwhite default '_+[^_]+_+'
-color body brightwhite brightblack '`[^`]+`'
+color body brightwhite default '[ \t\r\n\f]\*+[^*]+\*+[ \t\r\n\f]'
+color body brightwhite default '[ \t\r\n\f]_+[^_]+_+[ \t\r\n\f]'
+color body brightwhite brightblack '[ \t\r\n\f]`[^`]+`[ \t\r\n\f]'
 
 # Diff
 color body brightred default '^- .+'
