@@ -126,9 +126,9 @@ color sidebar_new green default
 color body blue default '(https?|HTTPS?)://[-\\\.,/%~_:?!@&=\#a-zA-Z0-9]+'
 
 # Markdown
-color body brightwhite default '[ \t\r\n\f]\*+[^*]+\*+[ \t\r\n\f]'
-color body brightwhite default '[ \t\r\n\f]_+[^_]+_+[ \t\r\n\f]'
-color body brightwhite brightblack '[ \t\r\n\f]`[^`]+`[ \t\r\n\f]'
+color body brightwhite default '[ \\t\\r\\n\\f]\*+[^*]+\*+[ \\t\\r\\n\\f]'
+color body brightwhite default '[ \\t\\r\\n\\f]_+[^_]+_+[ \\t\\r\\n\\f]'
+color body brightwhite brightblack '[ \\t\\r\\n\\f]`[^`]+`[\\. \\t\\r\\n\\f]'
 
 # Diff
 color body brightred default '^- .+'
