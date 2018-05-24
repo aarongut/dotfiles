@@ -44,6 +44,10 @@ endif
 " look for tags file along path
 set tags=tags;/
 
+" swapfiles to /tmp
+set directory=/tmp
+
+
 " F5 to trim trailing whitespace
 map <silent> <F5> :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :nohl <Bar> :unlet _s <CR>
 
