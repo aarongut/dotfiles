@@ -70,6 +70,9 @@ nmap <Leader>a :Ack!<Space>
 nmap <Leader>c :cclose<CR>
 nmap <Leader>C :copen<CR>
 
+" supertab
+let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
+
 " merlin
 let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
 execute "set rtp+=" . g:opamshare . "/merlin/vim"
