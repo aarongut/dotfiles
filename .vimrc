@@ -53,6 +53,7 @@ map <silent> <F5> :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :nohl <Ba
 
 " NERDTree binding
 map <C-n> :NERDTreeToggle<CR>
+nmap <Leader>f :NERDTreeFind<CR>
 
 " FZF
 set rtp+=/usr/local/opt/fzf
@@ -72,10 +73,6 @@ nmap <Leader>C :copen<CR>
 
 " supertab
 let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
-
-" merlin
-let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
-execute "set rtp+=" . g:opamshare . "/merlin/vim"
 
 " set light mode?
 if !empty($LC_LIGHT_BG)
