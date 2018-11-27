@@ -77,6 +77,6 @@ let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
 " set light mode?
 if !empty($LC_LIGHT_BG)
 	colorscheme default
-	let g:airline_theme='solarized'
 	set background=light
+	let g:airline_theme='light'
 endif
