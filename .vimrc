@@ -2,7 +2,41 @@
 set nocompatible
 set backspace=indent,eol,start
 
-execute pathogen#infect()
+call plug#begin('~/.vim/plugged')
+
+Plug 'mileszs/ack.vim'
+Plug 'junegunn/fzf.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'git@github.com:ervandew/supertab.git'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+" Plug 'altercation/vim-colors-solarized'
+Plug 'arcticicestudio/nord-vim'
+Plug 'tpope/vim-fugitive'
+Plug 'jez/vim-ispc'
+
+" vim vs. neovim
+if has('nvim')
+	" Typescript
+	Plug 'HerringtonDarkholme/yats.vim'
+	Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
+	Plug 'Shougo/deoplete.nvim'
+	Plug 'Shougo/denite.nvim'
+
+	let g:deoplete#enable_at_startup = 1
+
+	nmap <Leader>t :TSType<CR>
+	map <C-]> :TSDef<CR>
+
+	" Scala
+	Plug 'buntec/neovim-scalavista', { 'do': ':UpdateRemotePlugins' }
+else
+	Plug 'Quramy/tsuquyomi'
+	Plug 'leafgarland/typescript-vim'
+endif
+
+call plug#end()
 
 " Enable filetype detection and syntax hilighting
 syntax on
@@ -24,8 +58,14 @@ set title
 set showcmd
 set laststatus=2
 set background=dark
-let g:materialbox_italic=1
-colorscheme materialbox
+" let g:materialbox_italic=1
+
+colorscheme nord
+let g:nord_italic=1
+let g:nord_italic_comments=1
+let g:nord_underline=1
+let g:nord_uniform_diff_background=1
+
 set t_ut=
 let g:airline_theme='lucius'
 let g:airline_powerline_fonts=1
@@ -73,6 +113,15 @@ nmap <Leader>C :copen<CR>
 
 " supertab
 let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
+
+" Scala
+let g:lsc_enable_autocomplete = v:false
+let g:lsc_server_commands = {
+	\ 'scala': 'metals-vim'
+	\}
+let g:lsc_auto_map = {
+	\ 'GoToDefinition': 'gd',
+	\}
 
 " set light mode?
 if !empty($LC_LIGHT_BG)
