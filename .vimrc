@@ -15,6 +15,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'arcticicestudio/nord-vim'
 Plug 'tpope/vim-fugitive'
 Plug 'jez/vim-ispc'
+Plug 'junegunn/goyo.vim'
 
 " vim vs. neovim
 if has('nvim')
