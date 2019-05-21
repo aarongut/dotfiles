@@ -1,9 +1,0 @@
-[user]
-	name = Aaron Gutierrez
-	email = gutierrez.aaron.m@gmail.com
-[diff]
-	tool = vimdiff
-[difftool]
-	prompt = true
-[push]
-	default = simple
