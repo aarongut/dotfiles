@@ -21,14 +21,16 @@ Plug 'junegunn/goyo.vim'
 if has('nvim')
 	" Typescript
 	Plug 'HerringtonDarkholme/yats.vim'
+	Plug 'jelera/vim-javascript-syntax'
 	Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
 	Plug 'Shougo/deoplete.nvim'
 	Plug 'Shougo/denite.nvim'
 
 	let g:deoplete#enable_at_startup = 1
 
-	nmap <Leader>t :TSType<CR>
-	map <C-]> :TSDef<CR>
+	autocmd FileType typescript nnoremap <buffer> <C-]> :TSDef<CR>
+	autocmd FileType typescript nnoremap <buffer> <Leader>t :TSType<CR>
+	autocmd FileType typescript nnoremap <buffer> <Leader>d :TSDoc<CR>
 
 	" Scala
 	Plug 'buntec/neovim-scalavista', { 'do': ':UpdateRemotePlugins' }
