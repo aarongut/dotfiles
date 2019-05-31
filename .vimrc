@@ -104,8 +104,8 @@ nmap <C-P> :Files<CR>
 nmap <C-p> :GFiles<CR>
 
 " Ack
-if executable('ag')
-	let g:ackprg = 'ag --vimgrep'
+if executable('rg')
+	let g:ackprg = 'rg --vimgrep'
 endif
 
 nmap <Leader>a :Ack!<Space>
