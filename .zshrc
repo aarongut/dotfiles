@@ -8,7 +8,7 @@ then
 else
 fi
 
-export PATH=$PATH:/opt/cc0/bin:~/bin:/opt/android-studio/bin:/opt/smlnj/bin:~/go/bin
+export PATH=$PATH:~/bin
 export EDITOR=vim
 export CLICOLOR=1
 
@@ -62,10 +62,8 @@ fi
 # Turn off the ability for other people to message your terminal using wall
 mesg n
 
-export SMLNJ_HOME=/usr
-
 # The following lines were added by compinstall
-zstyle :compinstall filename '/home/amgutier/.zshrc'
+zstyle :compinstall filename ~/.zshrc
 
 autoload -Uz compinit
 compinit
