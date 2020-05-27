@@ -31,9 +31,6 @@ if has('nvim')
 	autocmd FileType typescript nnoremap <buffer> <C-]> :TSDef<CR>
 	autocmd FileType typescript nnoremap <buffer> <Leader>t :TSType<CR>
 	autocmd FileType typescript nnoremap <buffer> <Leader>d :TSDoc<CR>
-
-	" Scala
-	Plug 'buntec/neovim-scalavista', { 'do': ':UpdateRemotePlugins' }
 else
 	Plug 'Quramy/tsuquyomi'
 	Plug 'leafgarland/typescript-vim'
@@ -132,3 +129,6 @@ if !empty($LC_LIGHT_BG)
 	set background=light
 	let g:airline_theme='light'
 endif
+
+" markdown
+let g:markdown_fenced_languages = ['html', 'python', 'bash=sh', 'scala', 'typescript', 'javascript']

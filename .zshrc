@@ -9,14 +9,13 @@ else
 fi
 
 export PATH=$PATH:~/bin
-export EDITOR=vim
+export EDITOR=nvim
 export CLICOLOR=1
 
 export MAIL=/var/spool/mail/amgutier
 
 export LSCOLORS=DxGxcxdxCxegedabagacad
-export LESSOPEN='|/usr/local/bin/lesspipe.sh %s'
-export LESS_ADVANCED_PREPROCESSOR=1
+export LESSOPEN="|/usr/local/bin/lesspipe.sh %s" LESS_ADVANCED_PREPROCESSOR=1
 
 setopt PROMPT_SUBST ;
 # for git-prompt
@@ -30,24 +29,16 @@ PS1=$'\n╭%{$fg[yellow]%}$(__git_ps1 "(%s)")%{$fg[green]%}[%~]%{$reset_color%}\
 # set window title to working directory
 precmd () { print -Pn "\e]0;%~\a" }
 
-alias cdg='. cdg'
 alias coin='rlwrap coin' # by-setup-c0
 alias dark='export LC_LIGHT_BG='
 alias ed='ed -p:'
-alias fuck='sudo $(history -p \!\!)'
 alias grep='grep --color=auto'
-alias hidden='ls -a | grep "^\..*"'
-alias killz='killall -9 '
 alias light='export LC_LIGHT_BG=1'
 alias m='ncmpcpp'
-alias math='rlwrap MathKernel'
 alias ocaml='rlwrap ocaml'
 alias ocamldebug='rlwrap ocamldebug'
 alias rm='rm -i'
-alias shell='ps -p $$ -o comm='
 alias sml='rlwrap sml'
-alias sshp='ssh -o PubkeyAuthentication=no'
-alias style='clang-format-3.5 -style=Google'
 alias telnet='rlwrap telnet'
 
 # Enable color support of ls and also add handy aliases
