@@ -1,2 +1,2 @@
-set tw=100
-set colorcolumn=100
+setlocal tw=100
+setlocal colorcolumn=100
