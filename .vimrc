@@ -5,7 +5,7 @@ set backspace=indent,eol,start
 call plug#begin('~/.vim/plugged')
 
 Plug 'mileszs/ack.vim'
-Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf.vim', {'do': { -> fzf#install() }}
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'git@github.com:ervandew/supertab.git'
@@ -16,6 +16,7 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'tpope/vim-fugitive'
 Plug 'jez/vim-ispc'
 Plug 'junegunn/goyo.vim'
+Plug 'powerman/vim-plugin-AnsiEsc'
 
 " vim vs. neovim
 if has('nvim')
