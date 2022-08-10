@@ -5,7 +5,8 @@ set backspace=indent,eol,start
 call plug#begin('~/.vim/plugged')
 
 Plug 'mileszs/ack.vim'
-Plug 'junegunn/fzf.vim', {'do': { -> fzf#install() }}
+Plug 'junegunn/fzf', {'do': { -> fzf#install() }}
+Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'git@github.com:ervandew/supertab.git'
@@ -60,11 +61,14 @@ set showcmd
 set laststatus=2
 set background=dark
 
-let g:nord_italic=1
-let g:nord_italic_comments=1
-let g:nord_underline=1
-let g:nord_uniform_diff_background=1
-colorscheme nord
+"let g:nord_italic=1
+"let g:nord_italic_comments=1
+"let g:nord_underline=1
+"let g:nord_uniform_diff_background=1
+"colorscheme nord
+
+
+colorscheme materialbox
 
 set t_ut=
 let g:airline_theme='lucius'
