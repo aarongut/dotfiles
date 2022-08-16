@@ -28,7 +28,6 @@ if has('nvim')
 	"let g:deoplete#enable_at_startup = 1
 else
 	" Vim-only plugins here
-	" What is the best path forward for the best pattern not found
 endif
 
 call plug#end()
