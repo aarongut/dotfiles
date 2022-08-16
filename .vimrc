@@ -5,13 +5,12 @@ set backspace=indent,eol,start
 call plug#begin('~/.vim/plugged')
 
 Plug 'mileszs/ack.vim'
-Plug 'junegunn/fzf.vim', {'do': { -> fzf#install() }}
+Plug 'junegunn/fzf', {'do': { -> fzf#install() }}
+Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'git@github.com:ervandew/supertab.git'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-" Plug 'altercation/vim-colors-solarized'
 Plug 'arcticicestudio/nord-vim'
 Plug 'tpope/vim-fugitive'
 Plug 'jez/vim-ispc'
@@ -23,18 +22,13 @@ if has('nvim')
 	" Typescript
 	Plug 'HerringtonDarkholme/yats.vim'
 	Plug 'jelera/vim-javascript-syntax'
-	Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
 	Plug 'Shougo/deoplete.nvim'
-	Plug 'Shougo/denite.nvim'
+	Plug 'neovim/nvim-lspconfig'
 
-	let g:deoplete#enable_at_startup = 1
-
-	autocmd FileType typescript nnoremap <buffer> <C-]> :TSDef<CR>
-	autocmd FileType typescript nnoremap <buffer> <Leader>t :TSType<CR>
-	autocmd FileType typescript nnoremap <buffer> <Leader>d :TSDoc<CR>
+	"let g:deoplete#enable_at_startup = 1
 else
-	Plug 'Quramy/tsuquyomi'
-	Plug 'leafgarland/typescript-vim'
+	" Vim-only plugins here
+	" What is the best path forward for the best pattern not found
 endif
 
 call plug#end()
@@ -110,18 +104,6 @@ nmap <Leader>a :Ack!<Space>
 " quickfix
 nmap <Leader>c :cclose<CR>
 nmap <Leader>C :copen<CR>
-
-" supertab
-let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
-
-" Scala
-let g:lsc_enable_autocomplete = v:false
-let g:lsc_server_commands = {
-	\ 'scala': 'metals-vim'
-	\}
-let g:lsc_auto_map = {
-	\ 'GoToDefinition': 'gd',
-	\}
 
 " set light mode?
 if !empty($LC_LIGHT_BG)
