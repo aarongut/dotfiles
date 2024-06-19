@@ -6,6 +6,8 @@ vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, opts)
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, opts)
 vim.keymap.set('n', '<space>q', vim.diagnostic.setloclist, opts)
 
+vim.lsp.log_levels = vim.log.levels.DEBUG
+
 -- Use an on_attach function to only map the following keys
 -- after the language server attaches to the current buffer
 local on_attach = function(client, bufnr)
@@ -41,6 +43,10 @@ require('lspconfig')['pyright'].setup{
 require('lspconfig')['tsserver'].setup{
     on_attach = on_attach,
     flags = lsp_flags,
+    settings = {},
+    init_options = {
+	maxTsServerMemory = "12288",
+    },
 }
 require('lspconfig')['rust_analyzer'].setup{
     on_attach = on_attach,

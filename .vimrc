@@ -16,6 +16,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'jez/vim-ispc'
 Plug 'junegunn/goyo.vim'
 Plug 'powerman/vim-plugin-AnsiEsc'
+Plug 'hashivim/vim-terraform'
 
 " vim vs. neovim
 if has('nvim')
