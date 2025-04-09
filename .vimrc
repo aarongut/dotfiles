@@ -61,6 +61,7 @@ set background=dark
 "colorscheme nord
 
 
+set notermguicolors
 colorscheme materialbox
 
 set t_ut=
