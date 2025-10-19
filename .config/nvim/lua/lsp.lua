@@ -36,23 +36,16 @@ end
 
 local lsp_flags = {
 }
-require('lspconfig')['pyright'].setup{
+vim.lsp.config('*', {
     on_attach = on_attach,
     flags = lsp_flags,
-}
-require('lspconfig')['ts_ls'].setup{
+})
+vim.lsp.config('ts_ls', {
     on_attach = on_attach,
     flags = lsp_flags,
-    settings = {},
     init_options = {
-	maxTsServerMemory = "12288",
+        maxTsServerMemory = "12288",
     },
-}
-require('lspconfig')['rust_analyzer'].setup{
-    on_attach = on_attach,
-    flags = lsp_flags,
-    -- Server-specific settings...
-    settings = {
-      ["rust-analyzer"] = {}
-    }
-}
+})
+vim.lsp.enable('pyright')
+vim.lsp.enable('ts_ls')
