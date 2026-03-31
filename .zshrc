@@ -2,17 +2,9 @@ autoload -U colors && colors
 
 source ~/.git-prompt.sh
 
-if [[ -f ~/.zshrc_local ]]
-then
-  source ~/.zshrc_local
-else
-fi
-
 export PATH=$PATH:~/bin
 export EDITOR=nvim
 export CLICOLOR=1
-
-export MAIL=/var/spool/mail/amgutier
 
 export LSCOLORS=DxGxcxdxCxegedabagacad
 export LESSOPEN="|/usr/local/bin/lesspipe.sh %s" LESS_ADVANCED_PREPROCESSOR=1
@@ -74,3 +66,9 @@ setopt appendhistory autocd
 bindkey -v
 bindkey "^R" history-incremental-search-backward
 # End of lines configured by zsh-newuser-install
+#
+if [[ -f ~/.zshrc_local ]]
+then
+  source ~/.zshrc_local
+else
+fi
