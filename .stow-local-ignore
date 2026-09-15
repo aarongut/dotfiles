@@ -1,0 +1,8 @@
+# stow ignores these (regex, matched against path relative to the package)
+^/\.git
+\.gitignore$
+^/\.stow-local-ignore
+^/install
+^/profiles
+^/terminal_profile\.terminal
+^/README.*
