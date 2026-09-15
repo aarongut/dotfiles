@@ -1,42 +1,13 @@
-" Ensure that we are in modern vim mode, not backwards-compatible vi mode
+" Plugin-free config that works on any vim. Neovim sources this and
+" layers plugins and LSP on top in ~/.config/nvim/init.lua.
 set nocompatible
 set backspace=indent,eol,start
 
-call plug#begin('~/.vim/plugged')
-
-Plug 'mileszs/ack.vim'
-Plug 'junegunn/fzf', {'do': { -> fzf#install() }}
-Plug 'junegunn/fzf.vim'
-Plug 'scrooloose/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'arcticicestudio/nord-vim'
-Plug 'tpope/vim-fugitive'
-Plug 'jez/vim-ispc'
-Plug 'junegunn/goyo.vim'
-Plug 'hashivim/vim-terraform'
-
-" vim vs. neovim
-if has('nvim')
-	" Typescript
-	Plug 'HerringtonDarkholme/yats.vim'
-	Plug 'neovim/nvim-lspconfig'
-
-else
-	" Vim-only plugins here
-endif
-
-call plug#end()
-
-" Enable filetype detection and syntax hilighting
 syntax on
-filetype on
-filetype indent on
-filetype plugin on
+filetype plugin indent on
 set smartindent
 
-" Search betterer
+" Search
 set incsearch
 set hlsearch
 set ignorecase
@@ -49,30 +20,17 @@ set title
 set showcmd
 set laststatus=2
 set background=dark
-
-"let g:nord_italic=1
-"let g:nord_italic_comments=1
-"let g:nord_underline=1
-"let g:nord_uniform_diff_background=1
-"colorscheme nord
-
-
 set notermguicolors
-colorscheme materialbox
-
+silent! colorscheme materialbox
 set t_ut=
-let g:airline_theme='lucius'
-let g:airline_powerline_fonts=1
 
 " highlight long lines (over 80 char)
 if exists('+colorcolumn')
 	set colorcolumn=80
-else
 endif
 
 if exists('+mouse')
 	set mouse=a
-else
 endif
 
 " look for tags file along path
@@ -81,24 +39,8 @@ set tags=tags;/
 " swapfiles to /tmp
 set directory=/tmp
 
-
 " F5 to trim trailing whitespace
 map <silent> <F5> :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :nohl <Bar> :unlet _s <CR>
-
-" NERDTree binding
-map <C-n> :NERDTreeToggle<CR>
-nmap <Leader>f :NERDTreeFind<CR>
-
-" FZF
-nmap <C-P> :Files<CR>
-nmap <C-p> :GFiles<CR>
-
-" Ack
-if executable('rg')
-	let g:ackprg = 'rg --vimgrep'
-endif
-
-nmap <Leader>a :Ack!<Space>
 
 " quickfix
 nmap <Leader>c :cclose<CR>
@@ -108,7 +50,6 @@ nmap <Leader>C :copen<CR>
 if !empty($LC_LIGHT_BG)
 	colorscheme default
 	set background=light
-	let g:airline_theme='light'
 endif
 
 " markdown
