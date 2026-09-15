@@ -7,7 +7,6 @@ export EDITOR=nvim
 export CLICOLOR=1
 
 export LSCOLORS=DxGxcxdxCxegedabagacad
-export LESSOPEN="|/usr/local/bin/lesspipe.sh %s" LESS_ADVANCED_PREPROCESSOR=1
 
 setopt PROMPT_SUBST ;
 # for git-prompt
@@ -26,7 +25,6 @@ alias dark='export LC_LIGHT_BG='
 alias ed='ed -p:'
 alias grep='grep --color=auto'
 alias light='export LC_LIGHT_BG=1'
-alias m='ncmpcpp'
 alias ocaml='rlwrap ocaml'
 alias ocamldebug='rlwrap ocamldebug'
 alias rm='rm -i'
@@ -43,14 +41,16 @@ else
 fi
 
 # Turn off the ability for other people to message your terminal using wall
-mesg n
+[[ -t 0 ]] && mesg n
 
 # The following lines were added by compinstall
 zstyle :compinstall filename ~/.zshrc
 
+fpath=(~/.zfunc $fpath)
 autoload -Uz compinit
 compinit
 
+bindkey '^I' complete-word
 setopt completeinword
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 
@@ -64,7 +64,9 @@ HISTSIZE=250000
 SAVEHIST=250000
 setopt appendhistory autocd
 bindkey -v
-bindkey "^R" history-incremental-search-backward
+# fzf: fuzzy ^R history and ^T file search
+command -v fzf >/dev/null && source <(fzf --zsh)
+
 # End of lines configured by zsh-newuser-install
 #
 if [[ -f ~/.zshrc_local ]]

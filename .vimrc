@@ -15,18 +15,14 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'tpope/vim-fugitive'
 Plug 'jez/vim-ispc'
 Plug 'junegunn/goyo.vim'
-Plug 'powerman/vim-plugin-AnsiEsc'
 Plug 'hashivim/vim-terraform'
 
 " vim vs. neovim
 if has('nvim')
 	" Typescript
 	Plug 'HerringtonDarkholme/yats.vim'
-	Plug 'jelera/vim-javascript-syntax'
-	Plug 'Shougo/deoplete.nvim'
 	Plug 'neovim/nvim-lspconfig'
 
-	"let g:deoplete#enable_at_startup = 1
 else
 	" Vim-only plugins here
 endif
@@ -94,7 +90,6 @@ map <C-n> :NERDTreeToggle<CR>
 nmap <Leader>f :NERDTreeFind<CR>
 
 " FZF
-set rtp+=/usr/local/opt/fzf
 nmap <C-P> :Files<CR>
 nmap <C-p> :GFiles<CR>
 

@@ -1,5 +1,0 @@
-#!/bin/bash
-
-xrandr --output DP-1 --above LVDS-1 --auto
-
-feh --randomize --bg-fill ~/Backgrounds/*

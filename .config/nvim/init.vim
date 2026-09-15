@@ -4,4 +4,6 @@ source ~/.vimrc
 
 set runtimepath+=~/.config/nvim/
 
+lua require('init')
 lua require('lsp')
+lua require('ask_claude')

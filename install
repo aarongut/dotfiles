@@ -4,4 +4,4 @@ set -e
 
 git pull origin master;
 
-rsync --exclude ".git/" --exclude ".git*" --exclude "install" --exclude "profiles" --exclude "py3status" --exclude "bin/" --exclude "terminal_profile.terminal" -avhE  --no-perms . ~
+rsync --exclude ".git/" --exclude ".git*" --exclude "install" --exclude "profiles" --exclude "bin/" --exclude "terminal_profile.terminal" -avhE  --no-perms . ~
