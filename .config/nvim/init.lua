@@ -24,6 +24,9 @@ if vim.fn.executable('rg') == 1 then
   vim.g.ackprg = 'rg --vimgrep'
 end
 
+-- Keep fzf inside the Neovim window; newer fzf defaults to a tmux floating pane
+vim.g.fzf_layout = { window = { width = 0.9, height = 0.6 } }
+
 require('lazy').setup({
   { 'junegunn/fzf', build = ':call fzf#install()' },
   'junegunn/fzf.vim',
