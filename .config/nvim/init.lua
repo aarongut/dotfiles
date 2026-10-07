@@ -43,6 +43,9 @@ require('lazy').setup({
 }, {
   change_detection = { notify = false },
   rocks = { enabled = false }, -- none of these plugins need luarocks
+  performance = {
+    rtp = { reset = false }, -- preserve the shared ~/.vim syntax and ftplugins
+  },
 })
 
 local map = vim.keymap.set

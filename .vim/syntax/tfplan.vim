@@ -16,12 +16,12 @@ syntax match terraformPlanKnown '(known after apply)'
 syntax match terraformPlanSensitive '(sensitive value)'
 syntax match terraformPlanArrow '->'
 
-" Color the whole changed line, including nested attributes and legend entries.
-syntax match terraformPlanAdd '^\s*+\%(/-\)\@!.*$'
-syntax match terraformPlanDelete '^\s*-\%(/+\)\@!.*$'
-syntax match terraformPlanChange '^\s*\~.*$'
-syntax match terraformPlanReplace '^\s*\%(+/-\|-/+\).*$'
-syntax match terraformPlanRead '^\s*<=.*$'
+" Include the newline so diff backgrounds extend past the text to the edge.
+syntax match terraformPlanAdd '^\s*+\%(/-\)\@!.*\n'
+syntax match terraformPlanDelete '^\s*-\%(/+\)\@!.*\n'
+syntax match terraformPlanChange '^\s*\~.*\n'
+syntax match terraformPlanReplace '^\s*\%(+/-\|-/+\).*\n'
+syntax match terraformPlanRead '^\s*<=.*\n'
 syntax match terraformPlanSummary '^Plan:.*$'
 syntax match terraformPlanSummary '^Changes to Outputs:.*$'
 syntax match terraformPlanSummary '^No changes\..*$'
